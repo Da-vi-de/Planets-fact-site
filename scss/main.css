@@ -7,14 +7,40 @@
 
 body {
   background-color: #070724;
+  color: #ffffff;
+}
+
+.slider__img {
+  display: none;
+}
+
+.slider__img--active {
+  display: unset;
 }
 
 .hide {
   display: none;
 }
 
+.underline__active::after {
+  content: '';
+  display: block;
+  width: 5%;
+  margin: 0 auto;
+  top: 24.14%;
+  bottom: 75%;
+  border: 0.2px solid #419ebb;
+}
+
 /*
     font-family: 'Antonio', sans-serif;
     font-family: 'Spartan', sans-serif; 
 */
+.slider__content {
+  display: none;
+}
+
+.slider__content--active {
+  display: unset;
+}
 /*# sourceMappingURL=main.css.map */

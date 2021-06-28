@@ -1,0 +1,9 @@
+.underline__active::after {
+    content: '';
+    display: block;
+    width: 5%;
+    margin: 0 auto;
+    top: 24.14%;
+    bottom: 75%; 
+    border: 0.2px solid $color-mercury;
+}

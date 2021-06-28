@@ -2,3 +2,11 @@
     font-family: 'Antonio', sans-serif;
     font-family: 'Spartan', sans-serif; 
 */
+
+.slider__content {
+    display: none;
+}
+
+.slider__content--active {
+    display: unset;
+}
