@@ -1,3 +1,68 @@
+.menu-toggle {
+    margin-left: 11.5em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-icon {
+    filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
+}
+
+hr {
+    margin-bottom: 2em;
+    border: 0 none;
+    height: 1px;
+    background-color: $color-bright-gray;
+    color: $color-bright-gray;
+}
+
+.extended-line {
+    width: 1000%;
+    margin-left: -500%;
+}
+
+.circle {
+    float: left;
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 1.5em;
+    shape-outside: circle();
+    clip-path: circle();
+}
+
+.mercury {
+    background-color: $color-mercury;
+}
+
+.venus {
+    background-color: $color-venus;
+}
+
+.earth {
+    background-color: $color-earth;
+}
+
+.mars {
+    background-color: $color-mars;
+}
+
+.jupiter {
+    background-color: $color-jupiter;
+}
+
+.saturn {
+    background-color: $color-saturn;
+}
+
+.uranus {
+    background-color: $color-uranus;
+}
+
+.neptune {
+    background-color: $color-neptune;
+}
+
 .underline__active::after {
     content: '';
     display: block;

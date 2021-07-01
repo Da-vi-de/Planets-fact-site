@@ -3,11 +3,23 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
+  overflow-x: hidden;
 }
 
 body {
+  margin: 1.5em 1.5em;
+  background-image: url(../assets/background-stars.svg);
+  background-repeat: no-repeat;
   background-color: #070724;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+.chevron-icon {
+  display: inline;
+  margin-left: 20em;
+  margin-bottom: .8em;
 }
 
 .slider__img {
@@ -26,6 +38,73 @@ body {
   display: unset;
 }
 
+.menu-toggle {
+  margin-left: 11.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-icon {
+  -webkit-filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
+          filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
+}
+
+hr {
+  margin-bottom: 2em;
+  border: 0 none;
+  height: 1px;
+  background-color: #38384f;
+  color: #38384f;
+}
+
+.extended-line {
+  width: 1000%;
+  margin-left: -500%;
+}
+
+.circle {
+  float: left;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 1.5em;
+  shape-outside: circle();
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.mercury {
+  background-color: #419ebb;
+}
+
+.venus {
+  background-color: #eda249;
+}
+
+.earth {
+  background-color: #6F2ED6;
+}
+
+.mars {
+  background-color: #d14c32;
+}
+
+.jupiter {
+  background-color: #d83a34;
+}
+
+.saturn {
+  background-color: #cd5120;
+}
+
+.uranus {
+  background-color: #1ec2a4;
+}
+
+.neptune {
+  background-color: #2d68f0;
+}
+
 .underline__active::after {
   content: '';
   display: block;
@@ -40,6 +119,26 @@ body {
     font-family: 'Antonio', sans-serif;
     font-family: 'Spartan', sans-serif; 
 */
+.hero-text {
+  margin-bottom: .5em;
+  font-family: 'Antonio', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mobile-planets-list-text {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
 .slider__content {
   display: none;
 }

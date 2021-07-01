@@ -2,11 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    overflow-x: hidden;
 }
 
 body {
+    margin: 1.5em 1.5em;
+    background-image: url(../assets/background-stars.svg);
+    background-repeat: no-repeat;
     background-color: $color-black-pearl;
     color: $color-white;
+    text-transform: uppercase;
+}
+
+.chevron-icon {
+    display: inline;
+    margin-left: 20em;
+    margin-bottom: .8em;
 }
 
 .slider__img {

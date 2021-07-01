@@ -3,6 +3,26 @@
     font-family: 'Spartan', sans-serif; 
 */
 
+.hero-text {
+    margin-bottom: .5em;
+    font-family: 'Antonio', sans-serif;
+    font-size: $font-size-l-md;
+    font-weight: 500;
+}
+
+a,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: $color-white;
+}
+
+.mobile-planets-list-text {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: $font-size-s-l; 
+}
+
 .slider__content {
     display: none;
 }

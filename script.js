@@ -1,7 +1,8 @@
 const get = element => document.querySelector(element);
-let toggle = get('#menu-btn');
-let nav = get('#nav__two');
-let planet = get('#main__content');
+const toggle = get('#menu-btn');
+const nav = get('#nav__two');
+const planet = get('#main__content');
+const burgerIcon = get('#burger__icon')
 
 const sliderContainer = get('.slider__tab--container');
 const tabs = document.querySelectorAll('.slider__tab');
@@ -18,6 +19,7 @@ const geologyImg = get('#geology');
 toggle.addEventListener('click', function() {
     nav.classList.toggle('hide');
     planet.classList.toggle('hide');
+    burgerIcon.classList.toggle('burger-icon');
 });
 
 // Tab component
