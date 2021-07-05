@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow-x: hidden;
 }
 
 body {
@@ -15,10 +14,32 @@ body {
     text-transform: uppercase;
 }
 
+.mobile-list-position {
+    padding: 1.5em 0;
+}
+
 .chevron-icon {
-    display: inline;
-    margin-left: 20em;
-    margin-bottom: .8em;
+    float: right;
+  }
+
+.planet-img {
+    margin-top: 5.9em;
+    text-align: center;
+}
+
+.geology-planet-position {
+  position: relative;
+}
+
+.extra-info-container {
+    border: 2px solid $color-bright-gray;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.extra-info-position {
+    display: flex;
+    justify-content: space-between;
 }
 
 .slider__img {
@@ -27,6 +48,10 @@ body {
 
 .slider__img--active {
     display: unset;
+}
+
+.planet-info-position {
+    text-align: center;
 }
 
 .hide {

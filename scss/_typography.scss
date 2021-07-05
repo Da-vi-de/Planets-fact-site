@@ -30,3 +30,37 @@ a:focus {
 .slider__content--active {
     display: unset;
 }
+
+.planet-name {
+    margin-top: 2em;
+    margin-bottom: .5em;
+    font-family: 'Antonio', sans-serif;
+    font-size: $font-size-l;
+}
+
+.info-planet-text {
+    font-family: 'Spartan', sans-serif;
+    font-size: $font-size-s;
+    text-transform: capitalize;
+    line-height: 22px;
+}
+
+.source-text {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Spartan', sans-serif;
+    font-size: $font-size-s-md;
+    color: $color-bright-gray;
+    text-transform: capitalize;
+}
+
+.extra-info-text {
+    font-family: 'Spartan', sans-serif;
+    font-size: $font-size-xs;
+    color: $color-bright-gray;
+}
+
+.extra-info-text-two {
+    font-family: 'Antonio', sans-serif;
+    font-size: $font-size-l-sm;
+}

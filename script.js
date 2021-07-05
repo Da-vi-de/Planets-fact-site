@@ -43,7 +43,7 @@ geologyImg.classList.add('hide');
 // I selected two times the buttons, in a different way though.
 // The tabs selection is inside the buttons and it's a class selection.
 // The buttons are selected with the id in their parent element div.
-// It felt right to me, it's the best solution i could come up with,
+// It felt right to me, it's the best solution i could come up with
 // for this hardcoded approach.
 buttons.addEventListener('click', function(e) {
     e.preventDefault();
@@ -54,4 +54,4 @@ buttons.addEventListener('click', function(e) {
         geologyImg.classList.add('hide');
     };
 });
-        
+  

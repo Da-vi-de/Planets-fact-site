@@ -5,141 +5,272 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./scss/main.css">
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body>
 
-  <div class="planet-detail">
+  <!-- Header -->
 
-    <button data-tab="1" class="underline__active 
-                                underline--1"
-                                >
-      overview
-    </button>
+  <header class="hero">
 
-    <button data-tab="2" class="underline--2">
-      structure
-    </button>
+    <h1 class="hero-text">
+      the planets
 
-    <button data-tab="3" class="underline--3">
-      surface
-    </button>
-    <hr>
+      <button class="menu-toggle" id="menu-btn">
+        <img src="./assets/icon-hamburger.svg"  alt="burger icon" id="burger__icon"> 
+      </button>
+    </h1>
 
-<div class="planet-img">
-  <img class="slider__img--1" alt="planet mercury">
-  <img class="slider__img--2" alt="planet mercury internal">
-  <img class="slider__img--3" alt="planet mercury">
-  <img class="slider__img--3" alt="planet mercury geology">
-</div>
 
-<div class="slider__content slider__content--active slider__content--1 ">
-  <article>
-    <h2></h2>
-    <p></p>
-    <p>
-      source: 
-      <a href=""></a>
-    </p>
-  </article>
-</div>
 
-<div class="slider__content slider__content--2 ">
-  <article>
-    <h2></h2>
-    <p></p>
-    <p>
-      source: 
-      <a href=""></a>
-    </p>
-  </article>
-</div>
+    <nav class="header-navigation hide" id="nav__one">
 
-<div class="slider__content slider__content--3 ">
-  <article>
-    <h2></h2>
-    <p></p>
-    <p>
-      source: 
-      <a href=""></a>
-    </p>
-  </article>
-</div>
+      <h2 class="header-nav-text">
+        <a href="./">mercury</a>
+      </h2>
 
-<div class="extra-info">
+      <h2 class="header-nav-text">
+        <a href="./venus.html">venus</a>
+      </h2>
 
-  <article>
-    <h3>rotation time</h3>
-    <p>58.6 days</p>
-  </article>
+      <h2 class="header-nav-text">
+        <a href="./earth.html">earth</a>
+      </h2>
 
-  <article>
-    <h3>revolution time</h3>
-    <p>87.97 days</p>
-  </article>
+      <h2 class="header-nav-text">
+        <a href="./mars.html">mars</a>
+      </h2>
 
-  <article>
-    <h3>radius</h3>
-    <p>2,439.7 km</p>
-  </article>
+      <h2 class="header-nav-text">
+        <a href="./jupiter.html">jupiter</a>
+      </h2>
 
-  <article>
-    <h3>average temp</h3>
-    <p>430°c</p>
-  </article>
-</div>
-</div>
+      <h2 class="header-nav-text">
+        <a href="./saturn.html">saturn</a>
+      </h2>
 
-  Venus
+      <h2 class="header-nav-text">
+        <a href="./uranus.html">uranus</a>
+      </h2>
 
-  <!-- Overview Content Start -->
+      <h2 class="header-nav-text">
+        <a href="./neptune.html">neptune</a>
+      </h2>
+    </nav>
+    <hr class="extended-line">
+  </header>
 
-  Venus is the second planet from the Sun. It is named after the 
-  Roman goddess of love and beauty. As the brightest natural object 
-  in Earth's night sky after the Moon, Venus can cast shadows and 
-  can be, on rare occasions, visible to the naked eye in broad daylight.
+  <!-- Planets list -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
+  <nav class="mobile-planets-list hide" id="nav__two">
 
-  <!-- Overview Content End -->
+    <ul>
 
-  <!-- Internal Structure Content Start -->
+      <li class="mobile-list-position">
+        <span class="circle mercury"></span>
+        <a class="mobile-planets-list-text" href="/">mercury
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
 
-  The similarity in size and density between Venus and Earth suggests 
-  they share a similar internal structure: a core, mantle, and crust. 
-  Like that of Earth, Venusian core is most likely at least partially 
-  liquid because the two planets have been cooling at about the same rate.
+      <hr>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
+      <li class="mobile-list-position">
+        <span class="circle venus"></span>
+        <a class="mobile-planets-list-text" href="./venus.html">venus
+          <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
 
-  <!-- Internal Structure Content End -->
+      <hr>
 
-  <!-- Surface Geology Content Start -->
+      <li class="mobile-list-position">
+        <span class="circle earth"></span>
+        <a class="mobile-planets-list-text" href="./earth.html">earth
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+       </a>
+      </li>
 
-  Much of the Venusian surface appears to have been shaped by volcanic activity. 
-  Venus has several times as many volcanoes as Earth, and it has 167 large 
-  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-  of this size on Earth is the Big Island of Hawaii.
+      <hr>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
+      <li class="mobile-list-position">
+        <span class="circle mars"></span>
+        <a class="mobile-planets-list-text" href="./mars.html">mars
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
 
-  <!-- Surface Geology Content End -->
+      <hr>
 
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
+      <li class="mobile-list-position">
+        <span class="circle jupiter"></span>
+        <a class="mobile-planets-list-text" href="./jupiter.html">jupiter
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
 
-  Rotation Time
-  243 Days
+      <hr>
 
-  Revolution Time
-  224.7 Days
+      <li class="mobile-list-position">
+        <span class="circle saturn"></span>
+        <a class="mobile-planets-list-text" href="./saturn.html">saturn
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
 
-  Radius
-  6,051.8 KM
+      <hr>
 
-  Average Temp.
-  471°c
+      <li class="mobile-list-position">
+        <span class="circle uranus"></span>
+        <a class="mobile-planets-list-text" href="./uranus.html">uranus
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
+
+      <hr>
+
+      <li class="mobile-list-position">
+        <span class="circle neptune"></span>
+        <a class="mobile-planets-list-text" href="./neptune.html">neptune
+        <img class="chevron-icon" src="./assets/icon-chevron.svg" alt="chevron icon">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mercury -->
+
+  <main id="main__content">
+      <div class="planet-detail" id="buttons">
+
+      <div class="slider__tab--container">
+        <button data-tab="1" class="tab-btn 
+                                    underline__active
+                                    underline-venus 
+                                    underline--1
+                                    slider__tab"
+                                    id="tab__1"
+                                    >
+          overview
+        </button>
+
+        <button data-tab="2" class="tab-btn 
+                                    underline--2
+                                    underline-venus
+                                    slider__tab"
+                                    id="tab__2"
+                                    >
+          structure
+        </button>
+
+        <button data-tab="3" class="tab-btn 
+                                    underline--3
+                                    underline-venus
+                                    slider__tab"
+                                    id="tab__3"
+                                    >
+          surface
+        </button>
+        <hr class="extended-line">
+      </div>
+
+    
+    <div class="planet-img">
+
+      <img src="./assets/planet-mercury.svg" class="slider__images 
+                                                    slider__img 
+                                                    slider__img--active 
+                                                    slider__img--1" 
+                                                    alt="planet mercury"
+                                                    >
+
+      <img src="./assets/planet-mercury-internal.svg" class="slider__images 
+                                                            slider__img 
+                                                            slider__img--2" 
+                                                            alt="planet mercury internal"
+                                                            >
+
+    <img src="./assets/planet-mercury.svg" class="slider__images
+                                                  slider__img 
+                                                  slider__img--3" 
+                                                  alt="planet mercury"
+                                                  >                                                    
+    </div>
+
+   <div class="geology-planet" id="geology">
+      <img src="./assets/geology-mercury.png" alt="geology planet">
+    </div> 
+
+    <div class="slider__content slider__content--active slider__content--1 ">
+      <article>
+        <h2>Mercury</h2>
+        <p>Mercury is the smallest planet in the Solar System and the closest 
+          to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+          shortest of all the Sun's planets. Mercury is one of four terrestrial 
+          planets in the Solar System, and is a rocky body like Earth.</p>
+        <p>
+          source: 
+          <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="slider__content slider__content--2 ">
+      <article>
+        <h2>Mercury</h2>
+        <p>Mercury appears to have a solid silicate crust and mantle overlying a 
+          solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+          a solid inner core. The planet's density is the second highest in the 
+          Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
+        <p>
+          source: 
+          <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure">Wikipedia</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="slider__content slider__content--3 ">
+      <article>
+        <h2>Mercury</h2>
+        <p>Mercury's surface is similar in appearance to that of the Moon, showing 
+          extensive mare-like plains and heavy cratering, indicating that it has 
+          been geologically inactive for billions of years. It is more heterogeneous 
+          than either Mars's or the Moon’s.</p>
+        <p>
+          source: 
+          <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology">Wikipedia</a>
+        </p>
+      </article>
+    </div>
+    </div>
+
+    <div class="extra-info">
+
+      <article>
+        <h3>rotation time</h3>
+        <p>58.6 days</p>
+      </article>
+
+      <article>
+        <h3>revolution time</h3>
+        <p>87.97 days</p>
+      </article>
+
+      <article>
+        <h3>radius</h3>
+        <p>2,439.7 km</p>
+      </article>
+
+      <article>
+        <h3>average temp</h3>
+        <p>430°c</p>
+      </article>
+    </div>
+  </main>
 </body>
+<script src="./script.js"></script>
 </html>
