@@ -1,5 +1,5 @@
 .menu-toggle {
-    margin-left: 12em;
+    margin-left: 10em;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -71,7 +71,7 @@ hr {
     font-weight: 700;
     font-size: $font-size-s;
     padding: 1em 0;
-    margin-right: 3.7em;
+    margin-right: 2.5em;
    
     cursor: pointer;
 
@@ -126,7 +126,76 @@ hr {
 .geology-planet {
     width: 4em;
     height: 4em;
-    margin-left: 8.2em;
+    margin-left: 7.2em;
     top: -1em;
     position: absolute;
+}
+
+@media all and (min-width: 23.4375em) {
+    .menu-toggle {
+        margin-left: 12.5em;
+    }
+
+    .tab-btn {
+        margin-right: 3em;
+    }
+}
+
+@media all and (min-width: 31.25em) {
+    .menu-toggle {
+        margin-left: 19em;
+    }
+
+    .tab-btn {
+        margin-left: 2em;
+        margin-right: 4.5em;
+    }
+
+    .geology-planet {
+        margin-left: 11.5em;
+    }
+}
+
+@media all and (min-width: 43.75em) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .aboveline:hover {
+        border-top: 4px;
+        border-top-style: solid;
+        border-top-width: 100%;
+    }
+
+    .aboveline-mercury:hover {
+        border-top-color: $color-mercury;
+    }
+
+    .aboveline-venus:hover {
+        border-top-color: $color-venus;
+    }
+
+    .aboveline-earth:hover {
+        border-top-color: $color-earth;
+    }
+
+    .aboveline-mars:hover {
+        border-top-color: $color-mars;
+    }
+
+    .aboveline-jupiter:hover {
+        border-top-color: $color-jupiter;
+    }
+
+    .aboveline-saturn:hover {
+        border-top-color: $color-saturn;
+    }
+
+    .aboveline-uranus:hover {
+        border-top-color: $color-uranus;
+    }
+
+    .aboveline-neptune:hover {
+        border-top-color: $color-neptune;
+    }
 }

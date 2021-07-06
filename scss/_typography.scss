@@ -64,3 +64,32 @@ a:focus {
     font-family: 'Antonio', sans-serif;
     font-size: $font-size-l-sm;
 }
+
+@media all and (min-width: 31.25em) {
+    .hero-text {
+        margin-left: .5em;
+    }
+}
+
+@media all and (min-width: 43.75em) {
+    .hero-text {
+        text-align: center;
+    }
+
+    a,
+    a:active,
+    a:focus {
+        color: $color-waterloo;
+    }
+
+    a:hover {
+        color: $color-white;
+    }
+
+    .header-nav-text {
+        font-family: 'Spartan', sans-serif;
+        font-size: $font-size-s;
+        padding-top: 1em;
+       
+    }
+}

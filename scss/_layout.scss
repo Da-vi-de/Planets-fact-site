@@ -6,12 +6,16 @@
 }
 
 body {
-    margin: 1.5em 1.5em;
+    margin: 1.8em 1.8em;
     background-image: url(../assets/background-stars.svg);
     background-repeat: no-repeat;
     background-color: $color-black-pearl;
     color: $color-white;
     text-transform: uppercase;
+}
+
+.header-navigation {
+    display: none;
 }
 
 .mobile-list-position {
@@ -34,12 +38,13 @@ body {
 .extra-info-container {
     border: 2px solid $color-bright-gray;
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .extra-info-position {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .slider__img {
@@ -60,4 +65,19 @@ body {
 
 .show {
     display: unset;
+}
+
+@media all and (min-width: 31.25em) {
+    body {
+        margin: 1.8em 2.2em;
+    }
+}
+
+@media all and (min-width: 43.75em) {
+    .header-navigation {
+        display: unset;
+        display: flex;
+        justify-content: space-between;
+        margin: 1.8em 0;
+    }
 }
