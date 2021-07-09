@@ -8,6 +8,7 @@
     font-family: 'Antonio', sans-serif;
     font-size: $font-size-l-md;
     font-weight: 500;
+    color: $color-white;
 }
 
 a,
@@ -32,7 +33,7 @@ a:focus {
 }
 
 .planet-name {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: .5em;
     font-family: 'Antonio', sans-serif;
     font-size: $font-size-l;
@@ -65,31 +66,20 @@ a:focus {
     font-size: $font-size-l-sm;
 }
 
-@media all and (min-width: 31.25em) {
-    .hero-text {
-        margin-left: .5em;
-    }
-}
-
 @media all and (min-width: 43.75em) {
-    .hero-text {
-        text-align: center;
-    }
+  h2  a,
+  h2  a:active,
+  h2  a:focus {
+    color: $color-waterloo;
+  }
 
-    a,
-    a:active,
-    a:focus {
-        color: $color-waterloo;
-    }
-
-    a:hover {
+  h2  a:hover {
         color: $color-white;
-    }
+}
 
     .header-nav-text {
         font-family: 'Spartan', sans-serif;
         font-size: $font-size-s;
         padding-top: 1em;
-       
     }
 }

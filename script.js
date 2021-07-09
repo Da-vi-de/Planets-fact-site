@@ -53,16 +53,11 @@ buttons.addEventListener('click', function(e) {
     } else {
         geologyImg.classList.add('hide');
     };
-});
+}); 
 
 
-/* Hide mobile menu burger and show full navigation
+/* 
 const width = window.screen.width;
 
-if(width >= 700) {
-    toggle.classList.add('hide');
-    navTabletDesk.classList.add('show');
-} else {
-    navTabletDesk.classList.add('hide');
-    toggle.classList.add('show');
-}; */
+ */
+
