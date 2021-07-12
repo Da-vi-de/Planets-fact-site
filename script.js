@@ -55,9 +55,27 @@ buttons.addEventListener('click', function(e) {
     };
 }); 
 
+// Change Tab content for tablet and desktop screen
+function changeTabContent(e) {
+    e.preventDefault();
 
-/* 
-const width = window.screen.width;
+    const currentWidth = window.innerWidth;
 
- */
+    if(currentWidth >= 700) {
+        overview.innerHTML = "01 overview";
+        structure.innerHTML = "02 internal structure";
+        surface.innerHTML = "03 surface geology";
+
+    }  else {
+        overview.innerHTML = "overview";
+        structure.innerHTML = "structure";
+        surface.innerHTML = "surface";
+    };
+};
+window.onload = changeTabContent;  // The onload is need because we always want to see the right content when the page is refreshed
+window.onresize = changeTabContent;
+
+/*
+
+*/
 

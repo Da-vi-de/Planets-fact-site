@@ -74,7 +74,7 @@ body {
 .extra-info-container {
   border: 2px solid #38384f;
   padding: 1em;
-  margin-bottom: .5em;
+  margin-bottom: .6em;
 }
 
 .extra-info-position {
@@ -125,21 +125,24 @@ body {
             justify-content: space-between;
     margin-bottom: 1.8em;
   }
-  .planet-img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .planet-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .content-pos-tablet-desk {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .btns-pos-tablet-desk {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
+  /* .planet-img {
+        order: 1;
+    }
+
+    .content-pos-tablet-desk {
+        order: 2;
+    }
+
+    .btns-pos-tablet-desk {
+        order: 3;
+        
+    } */
 }
 
 .menu-toggle {
@@ -335,7 +338,37 @@ hr {
     width: 8em;
     height: 8em;
     margin-left: 1.8em;
-    margin-top: -.6em;
+    margin-top: -1.2em;
+  }
+  .tab-btn {
+    padding: 1.5em;
+    border: 2px solid #38384f;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  .underline-mercury:hover {
+    background-color: #419ebb;
+  }
+  .underline-venus:hover {
+    background-color: #eda249;
+  }
+  .underline-earth:hover {
+    background-color: #6F2ED6;
+  }
+  .underline-mars:hover {
+    background-color: #d14c32;
+  }
+  .underline-jupiter:hover {
+    background-color: #d83a34;
+  }
+  .underline-saturn:hover {
+    background-color: #cd5120;
+  }
+  .underline-uranus:hover {
+    background-color: #1ec2a4;
+  }
+  .underline-neptune:hover {
+    background-color: #2d68f0;
   }
 }
 
@@ -419,6 +452,10 @@ a:focus {
     font-family: 'Spartan', sans-serif;
     font-size: 0.6875rem;
     padding-top: 1em;
+  }
+  .planet-name,
+  .info-planet-text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

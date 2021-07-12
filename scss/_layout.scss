@@ -34,11 +34,10 @@ body {
     float: right;
   }
 
-  .planet-detail {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   
+.planet-detail {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
 
 .images {
@@ -54,7 +53,7 @@ body {
 .extra-info-container {
     border: 2px solid $color-bright-gray;
     padding: 1em;
-    margin-bottom: .5em;
+    margin-bottom: .6em;
 }
 
 .extra-info-position {
@@ -95,7 +94,11 @@ body {
         margin-bottom: 1.8em;
     }
 
-    .planet-img {
+    .planet-detail {
+        flex-direction: column;
+    }
+
+   /* .planet-img {
         order: 1;
     }
 
@@ -106,6 +109,6 @@ body {
     .btns-pos-tablet-desk {
         order: 3;
         
-    }
+    } */
    
 }

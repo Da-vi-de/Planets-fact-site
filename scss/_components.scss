@@ -201,6 +201,45 @@ hr {
         width: 8em;
         height: 8em;
         margin-left: 1.8em;
-        margin-top: -.6em;
+        margin-top: -1.2em;
+    }
+
+    .tab-btn {
+        padding: 1.5em;
+        border: 2px solid $color-bright-gray;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+    .underline-mercury:hover {
+        background-color: $color-mercury;
+    }
+
+    .underline-venus:hover {
+        background-color: $color-venus;
+    }
+    
+    .underline-earth:hover {
+        background-color: $color-earth;
+    }
+    
+    .underline-mars:hover {
+        background-color: $color-mars;
+    }
+    
+    .underline-jupiter:hover {
+        background-color: $color-jupiter;
+    }
+    
+    .underline-saturn:hover {
+        background-color: $color-saturn;
+    }
+    
+    .underline-uranus:hover {
+        background-color: $color-uranus;
+    }
+    
+    .underline-neptune:hover {
+        background-color: $color-neptune;
     }
 }

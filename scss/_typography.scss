@@ -82,4 +82,9 @@ a:focus {
         font-size: $font-size-s;
         padding-top: 1em;
     }
+
+.planet-name, 
+.info-planet-text {
+    text-align: left;
+}
 }
