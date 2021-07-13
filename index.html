@@ -22,13 +22,18 @@
     </h1>
 
       <button class="menu-toggle" id="menu-btn">
-        <img src="./assets/icon-hamburger.svg"  alt="burger icon" id="burger__icon"> 
+        <img src="./assets/icon-hamburger.svg"  
+             alt="burger icon" id="burger__icon" 
+             aria-hidden="true"
+             aria-label="open the menu"> 
       </button>
     </header>
 
     <!-- Large Screen Navigation -->
 
-    <nav class="header-navigation" id="nav__one">
+    <nav class="header-navigation" 
+         id="nav__one" 
+         role="navigation">
     
       <h2 class="header-nav-text aboveline aboveline-mercury">
         <a href="./">mercury</a>
@@ -67,7 +72,9 @@
 
   <!-- Planets list (Mobile Navigation) -->
 
-  <nav class="mobile-planets-list hide" id="nav__two">
+  <nav class="mobile-planets-list hide" 
+      id="nav__two" 
+      role="navigation">
 
     <ul>
 
@@ -149,7 +156,7 @@
 
     <!-- All Buttons / Tabs-->
 
-    <div id="buttons">
+    <div class="tablet-desk-position" id="buttons">
 
       <div class="planet-detail  
                   slider__tab--container">
@@ -218,6 +225,8 @@
 </div> 
 
     <!-- All Planet Content-->
+    
+<div class="content-tablet-desk-position">
 
     <div class="slider__content 
                 slider__content--active 
@@ -268,6 +277,7 @@
       </article>
       </div>
     </div>
+  </div>
     
   <!-- Extra info -->
 

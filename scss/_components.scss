@@ -205,41 +205,49 @@ hr {
     }
 
     .tab-btn {
-        padding: 1.5em;
+        padding: 1.2em;
         border: 2px solid $color-bright-gray;
         text-align: left;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 
-    .underline-mercury:hover {
+    .underline-mercury:hover,
+    .underline-mercury:focus {
         background-color: $color-mercury;
     }
 
-    .underline-venus:hover {
+    .underline-venus:hover,
+    .underline-venus:focus {
         background-color: $color-venus;
     }
     
-    .underline-earth:hover {
+    .underline-earth:hover,
+    .underline-earth:focus {
         background-color: $color-earth;
     }
     
-    .underline-mars:hover {
+    .underline-mars:hover,
+    .underline-mars:focus {
         background-color: $color-mars;
     }
     
-    .underline-jupiter:hover {
+    .underline-jupiter:hover,
+    .underline-jupiter:focus {
         background-color: $color-jupiter;
     }
     
-    .underline-saturn:hover {
+    .underline-saturn:hover,
+    .underline-saturn:focus {
         background-color: $color-saturn;
     }
     
-    .underline-uranus:hover {
+    .underline-uranus:hover,
+    .underline-uranus:focus {
         background-color: $color-uranus;
     }
     
-    .underline-neptune:hover {
+    .underline-neptune:hover,
+    .underline-neptune:focus {
         background-color: $color-neptune;
     }
 }

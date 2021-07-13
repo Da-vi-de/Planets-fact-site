@@ -125,24 +125,88 @@ body {
             justify-content: space-between;
     margin-bottom: 1.8em;
   }
+  .tablet-desk-position {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr auto auto;
+        grid-template-rows: 1fr auto auto;
+  }
+  .images {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-area: 1 / 1 / 2 / -1;
+    margin-top: 2em;
+  }
+  .content-tablet-desk-position {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 1.5em;
+  }
   .planet-detail {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 5em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* .planet-img {
+  /* 
+      9.375em 9.375em; 
+      
+      
+        .tablet-desk-position  {
+        width: max-content;
+        display: grid;
+        grid-template-columns: repeat(4, 7.5em) 9.375em 9.375em;
+        grid-template-rows: repeat(4, 6.25em) 7.5em 7.5em;
+    }
+
+    .images {
         order: 1;
+
+        grid-column-start: 1;
+        grid-column-end: 6;
+
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
-    .content-pos-tablet-desk {
+    .content-tablet-desk-position {
+        margin-right: 1.5em;
         order: 2;
+        
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
 
-    .btns-pos-tablet-desk {
+    .planet-detail {
+        flex-direction: column;
         order: 3;
-        
-    } */
+        margin-top: 4.5em;
+
+        grid-column-start: 4;
+        grid-column-end: 6;
+
+        grid-row-start: 5;
+        grid-row-end: 6;
+
+
+         grid-area: 2 / 2 /-1 /-1; 
+    }
+
+
+   */
 }
 
 .menu-toggle {
@@ -341,33 +405,41 @@ hr {
     margin-top: -1.2em;
   }
   .tab-btn {
-    padding: 1.5em;
+    padding: 1.2em;
     border: 2px solid #38384f;
     text-align: left;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
-  .underline-mercury:hover {
+  .underline-mercury:hover,
+  .underline-mercury:focus {
     background-color: #419ebb;
   }
-  .underline-venus:hover {
+  .underline-venus:hover,
+  .underline-venus:focus {
     background-color: #eda249;
   }
-  .underline-earth:hover {
+  .underline-earth:hover,
+  .underline-earth:focus {
     background-color: #6F2ED6;
   }
-  .underline-mars:hover {
+  .underline-mars:hover,
+  .underline-mars:focus {
     background-color: #d14c32;
   }
-  .underline-jupiter:hover {
+  .underline-jupiter:hover,
+  .underline-jupiter:focus {
     background-color: #d83a34;
   }
-  .underline-saturn:hover {
+  .underline-saturn:hover,
+  .underline-saturn:focus {
     background-color: #cd5120;
   }
-  .underline-uranus:hover {
+  .underline-uranus:hover,
+  .underline-uranus:focus {
     background-color: #1ec2a4;
   }
-  .underline-neptune:hover {
+  .underline-neptune:hover,
+  .underline-neptune:focus {
     background-color: #2d68f0;
   }
 }
@@ -455,6 +527,9 @@ a:focus {
   }
   .planet-name,
   .info-planet-text {
+    text-align: left;
+  }
+  .source-text {
     text-align: left;
   }
 }
