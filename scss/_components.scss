@@ -211,43 +211,99 @@ hr {
         margin-bottom: 2em;
     }
 
-    .underline-mercury:hover,
+    .underline-mercury:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-mercury:focus {
         background-color: $color-mercury;
     }
 
-    .underline-venus:hover,
+    .underline-venus:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-venus:focus {
         background-color: $color-venus;
     }
     
-    .underline-earth:hover,
+    .underline-earth:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-earth:focus {
         background-color: $color-earth;
     }
     
-    .underline-mars:hover,
+    .underline-mars:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-mars:focus {
         background-color: $color-mars;
     }
     
-    .underline-jupiter:hover,
+    .underline-jupiter:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-jupiter:focus {
         background-color: $color-jupiter;
     }
     
-    .underline-saturn:hover,
+    .underline-saturn:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-saturn:focus {
         background-color: $color-saturn;
     }
     
-    .underline-uranus:hover,
+    .underline-uranus:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-uranus:focus {
         background-color: $color-uranus;
     }
     
-    .underline-neptune:hover,
+    .underline-neptune:hover {
+        background-color: $color-bright-gray;
+    }
     .underline-neptune:focus {
         background-color: $color-neptune;
     }
+}
+
+@media all and (min-width: 50em) {
+    .mercury-img-size {
+        width: 13.5em;
+        height: 13.5em;
+    }
+
+    .geology-planet-mercury {
+        width: 10em;
+        height: 10em;
+    }
+
+    .tab-btn {
+        font-size: $font-size-s-l;
+    }
+}
+
+@media all and (min-width: 75em) {
+    .extended-line {
+        margin-left: -9em;
+        margin-right: -9em;
+    }
+
+    .geology-planet-mercury {
+        margin-top: -7em;
+    }
+}
+
+@media all and (min-width: 93.75em) { 
+    .mercury-img-size {
+        width: 15em;
+        height: 15em;
+    }
+
+    .geology-planet-mercury {
+        width: 12em;
+        height: 12em;
+        margin-top: -5em;
+    } 
 }
