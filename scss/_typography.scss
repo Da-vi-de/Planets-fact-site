@@ -1,8 +1,6 @@
-/*
-    font-family: 'Antonio', sans-serif;
-    font-family: 'Spartan', sans-serif; 
-*/
-
+/* =================
+       Typography
+   ================= */
 .hero-text {
     margin-bottom: .5em;
     font-family: 'Antonio', sans-serif;
@@ -139,6 +137,10 @@ a:focus {
     .header-nav-text {
         font-size: $font-size-s-l;
         margin-right: 2em;
+    }
+
+    .planet-name {
+        font-size: $font-size-xl-md;
     }
 
     .info-planet-text {

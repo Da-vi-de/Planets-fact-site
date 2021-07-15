@@ -1,3 +1,6 @@
+/* =================
+         Layout
+   ================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -161,6 +164,24 @@ justify-content: space-between;
         overflow-x: hidden;
     }
 
+    .tablet-desk-position {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .images {
+        grid-area: -1 / 1 / 1 / 1;
+    }
+
+    .content-tablet-desk-position {
+        grid-area: 2 / 3;
+    }
+
+    .planet-detail {
+        grid-area: 3 / 3;
+        margin-top: 2em;
+    }
+  
     .desktop-main-content-position {
        margin: 2em 9em;
     }
@@ -173,5 +194,4 @@ justify-content: space-between;
     .extra-info-container {
         padding-right: 9em;
     }
-
 }

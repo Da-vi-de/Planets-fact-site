@@ -1,3 +1,9 @@
+/* =================
+        Variables
+   ================= */
+/* =================
+         Layout
+   ================= */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -203,6 +209,25 @@ body {
     margin: 0;
     overflow-x: hidden;
   }
+  .tablet-desk-position {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .images {
+    -ms-grid-column: 1;
+    grid-area: -1 / 1 / 1 / 1;
+  }
+  .content-tablet-desk-position {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: 2 / 3;
+  }
+  .planet-detail {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: 3 / 3;
+    margin-top: 2em;
+  }
   .desktop-main-content-position {
     margin: 2em 9em;
   }
@@ -215,6 +240,9 @@ body {
   }
 }
 
+/* =================
+       Components
+   ================= */
 .menu-toggle {
   background-color: transparent;
   border: none;
@@ -492,20 +520,18 @@ hr {
 
 @media all and (min-width: 93.75em) {
   .mercury-img-size {
-    width: 15em;
-    height: 15em;
+    width: 18em;
+    height: 18em;
   }
   .geology-planet-mercury {
-    width: 12em;
-    height: 12em;
-    margin-top: -5em;
+    margin-top: -3em;
+    margin-left: 4em;
   }
 }
 
-/*
-    font-family: 'Antonio', sans-serif;
-    font-family: 'Spartan', sans-serif; 
-*/
+/* =================
+       Typography
+   ================= */
 .hero-text {
   margin-bottom: .5em;
   font-family: 'Antonio', sans-serif;
@@ -630,6 +656,9 @@ a:focus {
   .header-nav-text {
     font-size: 0.875rem;
     margin-right: 2em;
+  }
+  .planet-name {
+    font-size: 4rem;
   }
   .info-planet-text {
     font-size: 0.875rem;

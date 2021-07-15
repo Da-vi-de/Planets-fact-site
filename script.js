@@ -72,10 +72,5 @@ function changeTabContent(e) {
         surface.innerHTML = "surface";
     };
 };
-window.onload = changeTabContent;  // The onload is need because we always want to see the right content when the page is refreshed
+window.onload = changeTabContent;  // The onload is needed because we always want to see the right content when the page is refreshed
 window.onresize = changeTabContent;
-
-/*
-
-*/
-

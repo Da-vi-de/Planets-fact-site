@@ -1,3 +1,6 @@
+/* =================
+       Components
+   ================= */
 .menu-toggle {
     background-color: transparent;
     border: none;
@@ -297,13 +300,12 @@ hr {
 
 @media all and (min-width: 93.75em) { 
     .mercury-img-size {
-        width: 15em;
-        height: 15em;
+        width: 18em;
+        height: 18em;
     }
 
     .geology-planet-mercury {
-        width: 12em;
-        height: 12em;
-        margin-top: -5em;
+        margin-top: -3em;
+        margin-left: 4em;
     } 
 }
