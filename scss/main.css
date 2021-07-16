@@ -241,295 +241,6 @@ body {
 }
 
 /* =================
-       Components
-   ================= */
-.menu-toggle {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.burger-icon {
-  -webkit-filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
-          filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
-}
-
-hr {
-  border: 0 none;
-  height: 1px;
-  background-color: #38384f;
-  color: #38384f;
-}
-
-.extended-line {
-  margin-right: -1.8em;
-  margin-left: -1.8em;
-}
-
-.circle {
-  float: left;
-  width: 1.25em;
-  height: 1.25em;
-  margin-right: 1.5em;
-  shape-outside: circle();
-  -webkit-clip-path: circle();
-          clip-path: circle();
-}
-
-.mercury {
-  background-color: #419ebb;
-}
-
-.venus {
-  background-color: #eda249;
-}
-
-.earth {
-  background-color: #6F2ED6;
-}
-
-.mars {
-  background-color: #d14c32;
-}
-
-.jupiter {
-  background-color: #d83a34;
-}
-
-.saturn {
-  background-color: #cd5120;
-}
-
-.uranus {
-  background-color: #1ec2a4;
-}
-
-.neptune {
-  background-color: #2d68f0;
-}
-
-.tab-btn {
-  background: transparent;
-  border: none;
-  color: #38384f;
-  font-family: 'Spartan', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.6875rem;
-  padding: 1em 0;
-  cursor: pointer;
-}
-
-.tab-btn:focus {
-  color: #ffffff;
-}
-
-.tab-btn:hover {
-  color: #ffffff;
-}
-
-.underline__active {
-  border-bottom: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 100%;
-}
-
-.underline-mercury {
-  border-bottom-color: #419ebb;
-}
-
-.underline-venus {
-  border-bottom-color: #eda249;
-}
-
-.underline-earth {
-  border-bottom-color: #6F2ED6;
-}
-
-.underline-mars {
-  border-bottom-color: #d14c32;
-}
-
-.underline-jupiter {
-  border-bottom-color: #d83a34;
-}
-
-.underline-saturn {
-  border-bottom-color: #cd5120;
-}
-
-.underline-uranus {
-  border-bottom-color: #1ec2a4;
-}
-
-.underline-neptune {
-  border-bottom-color: #2d68f0;
-}
-
-.mercury-img-size {
-  width: 6.9em;
-  height: 6.9em;
-}
-
-.geology-planet-mercury {
-  width: 4em;
-  height: 4em;
-  -ms-grid-column: 3;
-  grid-column: 3 / 3;
-  margin-left: 1.5em;
-  margin-top: -1em;
-}
-
-.images .geology-planet-mercury {
-  -ms-grid-row: 3;
-  grid-row: 3 / 3;
-}
-
-@media all and (min-width: 43.75em) {
-  .menu-toggle {
-    display: none;
-  }
-  .aboveline {
-    border-top: 4px solid transparent;
-  }
-  .aboveline:hover {
-    border-top: 4px;
-    border-top-style: solid;
-    border-top-width: 100%;
-  }
-  .aboveline-mercury:hover {
-    border-top-color: #419ebb;
-  }
-  .aboveline-venus:hover {
-    border-top-color: #eda249;
-  }
-  .aboveline-earth:hover {
-    border-top-color: #6F2ED6;
-  }
-  .aboveline-mars:hover {
-    border-top-color: #d14c32;
-  }
-  .aboveline-jupiter:hover {
-    border-top-color: #d83a34;
-  }
-  .aboveline-saturn:hover {
-    border-top-color: #cd5120;
-  }
-  .aboveline-uranus:hover {
-    border-top-color: #1ec2a4;
-  }
-  .aboveline-neptune:hover {
-    border-top-color: #2d68f0;
-  }
-  .extended-line {
-    margin-right: -2.2em;
-    margin-left: -2.2em;
-  }
-  div hr {
-    display: none;
-  }
-  .mercury-img-size {
-    width: 11.5em;
-    height: 11.5em;
-  }
-  .geology-planet-mercury {
-    width: 8em;
-    height: 8em;
-    margin-left: 1.8em;
-    margin-top: -1.2em;
-  }
-  .tab-btn {
-    padding: 1.2em;
-    border: 2px solid #38384f;
-    text-align: left;
-    margin-bottom: 2em;
-  }
-  .underline-mercury:hover {
-    background-color: #38384f;
-  }
-  .underline-mercury:focus {
-    background-color: #419ebb;
-  }
-  .underline-venus:hover {
-    background-color: #38384f;
-  }
-  .underline-venus:focus {
-    background-color: #eda249;
-  }
-  .underline-earth:hover {
-    background-color: #38384f;
-  }
-  .underline-earth:focus {
-    background-color: #6F2ED6;
-  }
-  .underline-mars:hover {
-    background-color: #38384f;
-  }
-  .underline-mars:focus {
-    background-color: #d14c32;
-  }
-  .underline-jupiter:hover {
-    background-color: #38384f;
-  }
-  .underline-jupiter:focus {
-    background-color: #d83a34;
-  }
-  .underline-saturn:hover {
-    background-color: #38384f;
-  }
-  .underline-saturn:focus {
-    background-color: #cd5120;
-  }
-  .underline-uranus:hover {
-    background-color: #38384f;
-  }
-  .underline-uranus:focus {
-    background-color: #1ec2a4;
-  }
-  .underline-neptune:hover {
-    background-color: #38384f;
-  }
-  .underline-neptune:focus {
-    background-color: #2d68f0;
-  }
-}
-
-@media all and (min-width: 50em) {
-  .mercury-img-size {
-    width: 13.5em;
-    height: 13.5em;
-  }
-  .geology-planet-mercury {
-    width: 10em;
-    height: 10em;
-  }
-  .tab-btn {
-    font-size: 0.875rem;
-  }
-}
-
-@media all and (min-width: 75em) {
-  .extended-line {
-    margin-left: -9em;
-    margin-right: -9em;
-  }
-  .geology-planet-mercury {
-    margin-top: -7em;
-  }
-}
-
-@media all and (min-width: 93.75em) {
-  .mercury-img-size {
-    width: 18em;
-    height: 18em;
-  }
-  .geology-planet-mercury {
-    margin-top: -3em;
-    margin-left: 4em;
-  }
-}
-
-/* =================
        Typography
    ================= */
 .hero-text {
@@ -671,6 +382,772 @@ a:focus {
   }
   .extra-info-text-two {
     font-size: 2rem;
+  }
+}
+
+/* =================
+       Components
+   ================= */
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-icon {
+  -webkit-filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
+          filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
+}
+
+hr {
+  border: 0 none;
+  height: 1px;
+  background-color: #38384f;
+  color: #38384f;
+}
+
+.extended-line {
+  margin-right: -1.8em;
+  margin-left: -1.8em;
+}
+
+.circle {
+  float: left;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 1.5em;
+  shape-outside: circle();
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #38384f;
+  font-family: 'Spartan', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+.tab-btn:focus {
+  color: #ffffff;
+}
+
+.tab-btn:hover {
+  color: #ffffff;
+}
+
+.underline__active {
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 100%;
+}
+
+@media all and (min-width: 43.75em) {
+  .menu-toggle {
+    display: none;
+  }
+  .aboveline {
+    border-top: 4px solid transparent;
+  }
+  .aboveline:hover {
+    border-top: 4px;
+    border-top-style: solid;
+    border-top-width: 100%;
+  }
+  .extended-line {
+    margin-right: -2.2em;
+    margin-left: -2.2em;
+  }
+  div hr {
+    display: none;
+  }
+  .tab-btn {
+    padding: 1.2em;
+    border: 2px solid #38384f;
+    text-align: left;
+    margin-bottom: 2em;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .tab-btn {
+    font-size: 0.875rem;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .extended-line {
+    margin-left: -9em;
+    margin-right: -9em;
+  }
+}
+
+/* =================
+        Mercury
+   ================= */
+.mercury {
+  background-color: #419ebb;
+}
+
+.underline-mercury {
+  border-bottom-color: #419ebb;
+}
+
+.mercury-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-mercury {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-mercury {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-mercury:hover {
+    border-top-color: #419ebb;
+  }
+  .mercury-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-mercury {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-mercury {
+    border-bottom-color: #38384f;
+  }
+  .underline-mercury:hover {
+    background-color: #38384f;
+  }
+  .underline-mercury:focus {
+    background-color: #419ebb;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .mercury-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-mercury {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-mercury {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .mercury-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-mercury {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Venus
+   ================= */
+.venus {
+  background-color: #eda249;
+}
+
+.underline-venus {
+  border-bottom-color: #eda249;
+}
+
+.venus-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-venus {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-venus {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-venus:hover {
+    border-top-color: #eda249;
+  }
+  .venus-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-venus {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-venus {
+    border-bottom-color: #38384f;
+  }
+  .underline-venus:hover {
+    background-color: #38384f;
+  }
+  .underline-venus:focus {
+    background-color: #eda249;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .venus-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-venus {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-venus {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .venus-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-venus {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Earth
+   ================= */
+.earth {
+  background-color: #6F2ED6;
+}
+
+.underline-earth {
+  border-bottom-color: #6F2ED6;
+}
+
+.earth-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-earth {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-earth {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-earth:hover {
+    border-top-color: #6F2ED6;
+  }
+  .earth-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-earth {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-earth {
+    border-bottom-color: #38384f;
+  }
+  .underline-earth:hover {
+    background-color: #38384f;
+  }
+  .underline-earth:focus {
+    background-color: #6F2ED6;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .earth-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-earth {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-earth {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .earth-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-earth {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Mars
+   ================= */
+.mars {
+  background-color: #d14c32;
+}
+
+.underline-mars {
+  border-bottom-color: #d14c32;
+}
+
+.mars-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-mars {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-mars {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-mars:hover {
+    border-top-color: #d14c32;
+  }
+  .mars-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-mars {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-mars {
+    border-bottom-color: #38384f;
+  }
+  .underline-mars:hover {
+    background-color: #38384f;
+  }
+  .underline-mars:focus {
+    background-color: #d14c32;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .mars-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-mars {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-mars {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .mars-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-mars {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Jupiter
+   ================= */
+.jupiter {
+  background-color: #d83a34;
+}
+
+.underline-jupiter {
+  border-bottom-color: #d83a34;
+}
+
+.jupiter-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-jupiter {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-jupiter {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-jupiter:hover {
+    border-top-color: #d83a34;
+  }
+  .jupiter-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-jupiter {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-jupiter {
+    border-bottom-color: #38384f;
+  }
+  .underline-jupiter:hover {
+    background-color: #38384f;
+  }
+  .underline-jupiter:focus {
+    background-color: #d83a34;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .jupiter-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-jupiter {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-jupiter {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .jupiter-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-jupiter {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Saturn
+   ================= */
+.saturn {
+  background-color: #cd5120;
+}
+
+.underline-saturn {
+  border-bottom-color: #cd5120;
+}
+
+.saturn-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-saturn {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-saturn {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-saturn:hover {
+    border-top-color: #cd5120;
+  }
+  .saturn-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-saturn {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-saturn {
+    border-bottom-color: #38384f;
+  }
+  .underline-saturn:hover {
+    background-color: #38384f;
+  }
+  .underline-saturn:focus {
+    background-color: #cd5120;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .saturn-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-saturn {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-saturn {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .saturn-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-saturn {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Uranus
+   ================= */
+.uranus {
+  background-color: #1ec2a4;
+}
+
+.underline-uranus {
+  border-bottom-color: #1ec2a4;
+}
+
+.uranus-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-uranus {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-uranus {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-uranus:hover {
+    border-top-color: #1ec2a4;
+  }
+  .uranus-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-uranus {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-uranus {
+    border-bottom-color: #38384f;
+  }
+  .underline-uranus:hover {
+    background-color: #38384f;
+  }
+  .underline-uranus:focus {
+    background-color: #1ec2a4;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .uranus-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-uranus {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-uranus {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .uranus-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-uranus {
+    margin-top: -3em;
+    margin-left: 4em;
+  }
+}
+
+/* =================
+        Neptune
+   ================= */
+.neptune {
+  background-color: #2d68f0;
+}
+
+.underline-neptune {
+  border-bottom-color: #2d68f0;
+}
+
+.neptune-img-size {
+  width: 6.9em;
+  height: 6.9em;
+}
+
+.geology-planet-neptune {
+  width: 4em;
+  height: 4em;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+.images .geology-planet-neptune {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+  .aboveline-neptune:hover {
+    border-top-color: #2d68f0;
+  }
+  .neptune-img-size {
+    width: 11.5em;
+    height: 11.5em;
+  }
+  .geology-planet-neptune {
+    width: 8em;
+    height: 8em;
+    margin-left: 1.8em;
+    margin-top: -1.2em;
+  }
+  .underline-neptune {
+    border-bottom-color: #38384f;
+  }
+  .underline-neptune:hover {
+    background-color: #38384f;
+  }
+  .underline-neptune:focus {
+    background-color: #2d68f0;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .neptune-img-size {
+    width: 13.5em;
+    height: 13.5em;
+  }
+  .geology-planet-neptune {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .geology-planet-neptune {
+    margin-top: -7em;
+  }
+}
+
+@media all and (min-width: 93.75em) {
+  .neptune-img-size {
+    width: 18em;
+    height: 18em;
+  }
+  .geology-planet-neptune {
+    margin-top: -3em;
+    margin-left: 4em;
   }
 }
 /*# sourceMappingURL=main.css.map */

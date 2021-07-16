@@ -1,0 +1,86 @@
+/* =================
+        Saturn
+   ================= */
+   .saturn {
+    background-color: $color-saturn;
+}
+
+.underline-saturn {
+    border-bottom-color: $color-saturn;
+}
+
+.saturn-img-size {
+    width: 6.9em;
+    height: 6.9em;
+}
+
+ .geology-planet-saturn {
+    width: 4em;
+    height: 4em;
+    grid-column: 3 / 3;
+    margin-left: 1.5em;
+    margin-top: -1em;
+}
+
+.images .geology-planet-saturn {
+    grid-row: 3 / 3;
+}
+
+@media all and (min-width: 43.75em) {
+    .aboveline-saturn:hover {
+        border-top-color: $color-saturn;
+    }
+
+    .saturn-img-size {
+        width: 11.5em;
+        height: 11.5em;
+    }
+
+    .geology-planet-saturn {
+        width: 8em;
+        height: 8em;
+        margin-left: 1.8em;
+        margin-top: -1.2em;
+    }
+
+    .underline-saturn {
+        border-bottom-color: $color-bright-gray;
+    }
+
+    .underline-saturn:hover {
+        background-color: $color-bright-gray;
+    }
+    .underline-saturn:focus {
+        background-color: $color-saturn;
+    }
+}
+
+@media all and (min-width: 50em) {
+    .saturn-img-size {
+        width: 13.5em;
+        height: 13.5em;
+    }
+
+    .geology-planet-saturn {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media all and (min-width: 75em) {
+    .geology-planet-saturn {
+        margin-top: -7em;
+    }
+}
+
+@media all and (min-width: 93.75em) { 
+    .saturn-img-size {
+        width: 18em;
+        height: 18em;
+    }
+
+    .geology-planet-saturn {
+        margin-top: -3em;
+        margin-left: 4em;
+    } 
+}

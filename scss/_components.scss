@@ -32,38 +32,6 @@ hr {
     clip-path: circle();
 }
 
-.mercury {
-    background-color: $color-mercury;
-}
-
-.venus {
-    background-color: $color-venus;
-}
-
-.earth {
-    background-color: $color-earth;
-}
-
-.mars {
-    background-color: $color-mars;
-}
-
-.jupiter {
-    background-color: $color-jupiter;
-}
-
-.saturn {
-    background-color: $color-saturn;
-}
-
-.uranus {
-    background-color: $color-uranus;
-}
-
-.neptune {
-    background-color: $color-neptune;
-}
-
 .tab-btn {
     background: transparent;
     border: none;
@@ -90,55 +58,6 @@ hr {
     border-bottom-width: 100%;
 }
 
-.underline-mercury {
-    border-bottom-color: $color-mercury;
-}
-
-.underline-venus {
-    border-bottom-color: $color-venus;
-}
-
-.underline-earth {
-    border-bottom-color: $color-earth;
-}
-
-.underline-mars {
-    border-bottom-color: $color-mars;
-}
-
-.underline-jupiter {
-    border-bottom-color: $color-jupiter;
-}
-
-.underline-saturn {
-    border-bottom-color: $color-saturn;
-}
-
-.underline-uranus {
-    border-bottom-color: $color-uranus;
-}
-
-.underline-neptune {
-    border-bottom-color: $color-neptune;
-}
-
-.mercury-img-size {
-    width: 6.9em;
-    height: 6.9em;
-}
-
- .geology-planet-mercury {
-    width: 4em;
-    height: 4em;
-    grid-column: 3 / 3;
-    margin-left: 1.5em;
-    margin-top: -1em;
-}
-
-.images .geology-planet-mercury {
-    grid-row: 3 / 3;
-}
-
 @media all and (min-width: 43.75em) {
     .menu-toggle {
         display: none;
@@ -154,38 +73,6 @@ hr {
         border-top-width: 100%;
     }
 
-    .aboveline-mercury:hover {
-        border-top-color: $color-mercury;
-    }
-
-    .aboveline-venus:hover {
-        border-top-color: $color-venus;
-    }
-
-    .aboveline-earth:hover {
-        border-top-color: $color-earth;
-    }
-
-    .aboveline-mars:hover {
-        border-top-color: $color-mars;
-    }
-
-    .aboveline-jupiter:hover {
-        border-top-color: $color-jupiter;
-    }
-
-    .aboveline-saturn:hover {
-        border-top-color: $color-saturn;
-    }
-
-    .aboveline-uranus:hover {
-        border-top-color: $color-uranus;
-    }
-
-    .aboveline-neptune:hover {
-        border-top-color: $color-neptune;
-    }
-
     .extended-line {
         margin-right: -2.2em;
         margin-left: -2.2em;
@@ -195,93 +82,15 @@ hr {
         display: none;
     }
 
-    .mercury-img-size {
-        width: 11.5em;
-        height: 11.5em;
-    }
-
-    .geology-planet-mercury {
-        width: 8em;
-        height: 8em;
-        margin-left: 1.8em;
-        margin-top: -1.2em;
-    }
-
     .tab-btn {
         padding: 1.2em;
         border: 2px solid $color-bright-gray;
         text-align: left;
         margin-bottom: 2em;
     }
-
-    .underline-mercury:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-mercury:focus {
-        background-color: $color-mercury;
-    }
-
-    .underline-venus:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-venus:focus {
-        background-color: $color-venus;
-    }
-    
-    .underline-earth:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-earth:focus {
-        background-color: $color-earth;
-    }
-    
-    .underline-mars:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-mars:focus {
-        background-color: $color-mars;
-    }
-    
-    .underline-jupiter:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-jupiter:focus {
-        background-color: $color-jupiter;
-    }
-    
-    .underline-saturn:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-saturn:focus {
-        background-color: $color-saturn;
-    }
-    
-    .underline-uranus:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-uranus:focus {
-        background-color: $color-uranus;
-    }
-    
-    .underline-neptune:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-neptune:focus {
-        background-color: $color-neptune;
-    }
 }
 
 @media all and (min-width: 50em) {
-    .mercury-img-size {
-        width: 13.5em;
-        height: 13.5em;
-    }
-
-    .geology-planet-mercury {
-        width: 10em;
-        height: 10em;
-    }
-
     .tab-btn {
         font-size: $font-size-s-l;
     }
@@ -292,20 +101,6 @@ hr {
         margin-left: -9em;
         margin-right: -9em;
     }
-
-    .geology-planet-mercury {
-        margin-top: -7em;
-    }
 }
 
-@media all and (min-width: 93.75em) { 
-    .mercury-img-size {
-        width: 18em;
-        height: 18em;
-    }
 
-    .geology-planet-mercury {
-        margin-top: -3em;
-        margin-left: 4em;
-    } 
-}
