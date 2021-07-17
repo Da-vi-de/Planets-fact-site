@@ -24,9 +24,14 @@ toggle.addEventListener('click', function() {
 
 // Tab component
 sliderContainer.addEventListener('click', function(e) {
-    e.preventDefault();
     const clicked = e.target;
-    
+
+    // Prevent the event from happening in the parent element (during bubbling phase).
+    // The parent in the UI is rappresented by the space anywhere around the tabs, content and images.
+    // If inadvertently we click or tap that area with no guard clause, 
+    // the UI breaks badly!
+    if (clicked === sliderContainer) return;
+
     tabs.forEach(t => t.classList.remove('underline__active'));
     content.forEach(c => c.classList.remove('slider__content--active'));
     images.forEach(img => img.classList.remove('slider__img--active'));
@@ -35,6 +40,7 @@ sliderContainer.addEventListener('click', function(e) {
     
     document.querySelector(`.slider__content--${clicked.dataset.tab}`).classList.add('slider__content--active');
     document.querySelector(`.slider__img--${clicked.dataset.tab}`).classList.add('slider__img--active');
+
 });
 
 // Set the geology image only in surface tab
@@ -43,7 +49,7 @@ geologyImg.classList.add('hide');
 // I selected two times the buttons, in a different way though.
 // The tabs selection is inside the buttons and it's a class selection.
 // The buttons are selected with the id in their parent element div.
-// It felt right to me, it's the best solution i could come up with
+// It felt right to me, it's the best solution i could came up with
 // for this hardcoded approach.
 buttons.addEventListener('click', function(e) {
     e.preventDefault();
@@ -72,5 +78,7 @@ function changeTabContent(e) {
         surface.innerHTML = "surface";
     };
 };
-window.onload = changeTabContent;  // The onload is needed because we always want to see the right content when the page is refreshed
+// The onload is needed because we always want to see the right content in case
+// we want to or need to refresh the page.
+window.onload = changeTabContent;  
 window.onresize = changeTabContent;

@@ -509,7 +509,7 @@ hr {
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -2em;
 }
 
 .images .geology-planet-mercury {
@@ -529,7 +529,7 @@ hr {
     width: 8em;
     height: 8em;
     margin-left: 1.8em;
-    margin-top: -1.2em;
+    margin-top: -3em;
   }
   .underline-mercury {
     border-bottom-color: #38384f;
@@ -550,12 +550,13 @@ hr {
   .geology-planet-mercury {
     width: 10em;
     height: 10em;
+    margin-top: -3.5em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-mercury {
-    margin-top: -7em;
+    margin-top: -11.3em;
   }
 }
 
@@ -565,7 +566,6 @@ hr {
     height: 18em;
   }
   .geology-planet-mercury {
-    margin-top: -3em;
     margin-left: 4em;
   }
 }
@@ -582,17 +582,17 @@ hr {
 }
 
 .venus-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 9.6em;
+  height: 9.6em;
 }
 
 .geology-planet-venus {
-  width: 4em;
-  height: 4em;
+  width: 7em;
+  height: 7em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -3em;
 }
 
 .images .geology-planet-venus {
@@ -605,14 +605,14 @@ hr {
     border-top-color: #eda249;
   }
   .venus-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 14.5em;
+    height: 14.5em;
   }
   .geology-planet-venus {
-    width: 8em;
-    height: 8em;
-    margin-left: 1.8em;
-    margin-top: -1.2em;
+    width: 10em;
+    height: 10em;
+    margin-left: 2em;
+    margin-top: -4.3em;
   }
   .underline-venus {
     border-bottom-color: #38384f;
@@ -627,28 +627,29 @@ hr {
 
 @media all and (min-width: 50em) {
   .venus-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 16.5em;
+    height: 16.5em;
   }
   .geology-planet-venus {
-    width: 10em;
-    height: 10em;
+    width: 12em;
+    height: 12em;
+    margin-top: -4.7em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-venus {
-    margin-top: -7em;
+    margin-top: -10em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .venus-img-size {
-    width: 18em;
-    height: 18em;
+    width: 21em;
+    height: 21em;
   }
   .geology-planet-venus {
-    margin-top: -3em;
+    margin-top: -9.5em;
     margin-left: 4em;
   }
 }
@@ -665,17 +666,17 @@ hr {
 }
 
 .earth-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 10.8em;
+  height: 10.8em;
 }
 
 .geology-planet-earth {
-  width: 4em;
-  height: 4em;
+  width: 7.5em;
+  height: 7.5em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -3.5em;
 }
 
 .images .geology-planet-earth {
@@ -688,14 +689,14 @@ hr {
     border-top-color: #6F2ED6;
   }
   .earth-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 14.5em;
+    height: 14.5em;
   }
   .geology-planet-earth {
-    width: 8em;
-    height: 8em;
+    width: 10.5em;
+    height: 10.5em;
     margin-left: 1.8em;
-    margin-top: -1.2em;
+    margin-top: -5em;
   }
   .underline-earth {
     border-bottom-color: #38384f;
@@ -710,28 +711,28 @@ hr {
 
 @media all and (min-width: 50em) {
   .earth-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 16.5em;
+    height: 16.5em;
   }
   .geology-planet-earth {
-    width: 10em;
-    height: 10em;
+    width: 13em;
+    height: 13em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-earth {
-    margin-top: -7em;
+    margin-top: -9.5em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .earth-img-size {
-    width: 18em;
-    height: 18em;
+    width: 21em;
+    height: 21em;
   }
   .geology-planet-earth {
-    margin-top: -3em;
+    margin-top: -10em;
     margin-left: 4em;
   }
 }
@@ -748,17 +749,17 @@ hr {
 }
 
 .mars-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 8em;
+  height: 8em;
 }
 
 .geology-planet-mars {
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -2.3em;
 }
 
 .images .geology-planet-mars {
@@ -771,14 +772,14 @@ hr {
     border-top-color: #d14c32;
   }
   .mars-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 12em;
+    height: 12em;
   }
   .geology-planet-mars {
-    width: 8em;
-    height: 8em;
-    margin-left: 1.8em;
-    margin-top: -1.2em;
+    width: 9em;
+    height: 9em;
+    margin-left: 1.6em;
+    margin-top: -3.2em;
   }
   .underline-mars {
     border-bottom-color: #38384f;
@@ -793,29 +794,30 @@ hr {
 
 @media all and (min-width: 50em) {
   .mars-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 14em;
+    height: 14em;
   }
   .geology-planet-mars {
-    width: 10em;
-    height: 10em;
+    width: 11em;
+    height: 11em;
+    margin-top: -3.7em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-mars {
-    margin-top: -7em;
+    margin-top: -12em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .mars-img-size {
-    width: 18em;
-    height: 18em;
+    width: 18.5em;
+    height: 18.5em;
   }
   .geology-planet-mars {
-    margin-top: -3em;
-    margin-left: 4em;
+    margin-top: -11.3em;
+    margin-left: 3.7em;
   }
 }
 
@@ -831,17 +833,17 @@ hr {
 }
 
 .jupiter-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 14em;
+  height: 14em;
 }
 
 .geology-planet-jupiter {
-  width: 4em;
-  height: 4em;
+  width: 11em;
+  height: 11em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -5.3em;
 }
 
 .images .geology-planet-jupiter {
@@ -854,14 +856,14 @@ hr {
     border-top-color: #d83a34;
   }
   .jupiter-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 18em;
+    height: 18em;
   }
   .geology-planet-jupiter {
-    width: 8em;
-    height: 8em;
-    margin-left: 1.8em;
-    margin-top: -1.2em;
+    width: 14em;
+    height: 14em;
+    margin-left: 1.9em;
+    margin-top: -6.5em;
   }
   .underline-jupiter {
     border-bottom-color: #38384f;
@@ -876,28 +878,29 @@ hr {
 
 @media all and (min-width: 50em) {
   .jupiter-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 20em;
+    height: 20em;
   }
   .geology-planet-jupiter {
-    width: 10em;
-    height: 10em;
+    width: 16em;
+    height: 16em;
+    margin-top: -7.2em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-jupiter {
-    margin-top: -7em;
+    margin-top: -7.5em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .jupiter-img-size {
-    width: 18em;
-    height: 18em;
+    width: 24.5em;
+    height: 24.5em;
   }
   .geology-planet-jupiter {
-    margin-top: -3em;
+    margin-top: -8.7em;
     margin-left: 4em;
   }
 }
@@ -914,17 +917,17 @@ hr {
 }
 
 .saturn-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 16em;
+  height: 16em;
 }
 
 .geology-planet-saturn {
-  width: 4em;
-  height: 4em;
+  width: 8em;
+  height: 8em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
-  margin-left: 1.5em;
-  margin-top: -1em;
+  margin-left: 4em;
+  margin-top: -6.7em;
 }
 
 .images .geology-planet-saturn {
@@ -937,14 +940,14 @@ hr {
     border-top-color: #cd5120;
   }
   .saturn-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 20em;
+    height: 20em;
   }
   .geology-planet-saturn {
-    width: 8em;
-    height: 8em;
-    margin-left: 1.8em;
-    margin-top: -1.2em;
+    width: 9em;
+    height: 9em;
+    margin-left: 5.5em;
+    margin-top: -7.7em;
   }
   .underline-saturn {
     border-bottom-color: #38384f;
@@ -959,29 +962,30 @@ hr {
 
 @media all and (min-width: 50em) {
   .saturn-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 22em;
+    height: 22em;
   }
   .geology-planet-saturn {
-    width: 10em;
-    height: 10em;
+    width: 11em;
+    height: 11em;
+    margin-top: -8.5em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-saturn {
-    margin-top: -7em;
+    margin-top: -9.2em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .saturn-img-size {
-    width: 18em;
-    height: 18em;
+    width: 26.5em;
+    height: 26.5em;
   }
   .geology-planet-saturn {
-    margin-top: -3em;
-    margin-left: 4em;
+    margin-top: -12em;
+    margin-left: 7.5em;
   }
 }
 
@@ -997,17 +1001,17 @@ hr {
 }
 
 .uranus-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 11em;
+  height: 11em;
 }
 
 .geology-planet-uranus {
-  width: 4em;
-  height: 4em;
+  width: 8em;
+  height: 8em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -4em;
 }
 
 .images .geology-planet-uranus {
@@ -1020,14 +1024,14 @@ hr {
     border-top-color: #1ec2a4;
   }
   .uranus-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 15em;
+    height: 15em;
   }
   .geology-planet-uranus {
-    width: 8em;
-    height: 8em;
+    width: 11em;
+    height: 11em;
     margin-left: 1.8em;
-    margin-top: -1.2em;
+    margin-top: -5em;
   }
   .underline-uranus {
     border-bottom-color: #38384f;
@@ -1042,28 +1046,28 @@ hr {
 
 @media all and (min-width: 50em) {
   .uranus-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 13em;
+    height: 13em;
   }
   .geology-planet-uranus {
-    width: 10em;
-    height: 10em;
+    width: 9.5em;
+    height: 9.5em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-uranus {
-    margin-top: -7em;
+    margin-top: -12.5em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .uranus-img-size {
-    width: 18em;
-    height: 18em;
+    width: 17.5em;
+    height: 17.5em;
   }
   .geology-planet-uranus {
-    margin-top: -3em;
+    margin-top: -13em;
     margin-left: 4em;
   }
 }
@@ -1080,17 +1084,17 @@ hr {
 }
 
 .neptune-img-size {
-  width: 6.9em;
-  height: 6.9em;
+  width: 11em;
+  height: 11em;
 }
 
 .geology-planet-neptune {
-  width: 4em;
-  height: 4em;
+  width: 8em;
+  height: 8em;
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   margin-left: 1.5em;
-  margin-top: -1em;
+  margin-top: -4em;
 }
 
 .images .geology-planet-neptune {
@@ -1103,14 +1107,14 @@ hr {
     border-top-color: #2d68f0;
   }
   .neptune-img-size {
-    width: 11.5em;
-    height: 11.5em;
+    width: 15em;
+    height: 15em;
   }
   .geology-planet-neptune {
-    width: 8em;
-    height: 8em;
+    width: 11em;
+    height: 11em;
     margin-left: 1.8em;
-    margin-top: -1.2em;
+    margin-top: -5.3em;
   }
   .underline-neptune {
     border-bottom-color: #38384f;
@@ -1125,28 +1129,29 @@ hr {
 
 @media all and (min-width: 50em) {
   .neptune-img-size {
-    width: 13.5em;
-    height: 13.5em;
+    width: 13em;
+    height: 13em;
   }
   .geology-planet-neptune {
-    width: 10em;
-    height: 10em;
+    width: 9.5em;
+    height: 9.5em;
+    margin-top: -5em;
   }
 }
 
 @media all and (min-width: 75em) {
   .geology-planet-neptune {
-    margin-top: -7em;
+    margin-top: -13em;
   }
 }
 
 @media all and (min-width: 93.75em) {
   .neptune-img-size {
-    width: 18em;
-    height: 18em;
+    width: 17.5em;
+    height: 17.5em;
   }
   .geology-planet-neptune {
-    margin-top: -3em;
+    margin-top: -12.5em;
     margin-left: 4em;
   }
 }

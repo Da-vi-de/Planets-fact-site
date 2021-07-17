@@ -19,7 +19,7 @@
     height: 4em;
     grid-column: 3 / 3;
     margin-left: 1.5em;
-    margin-top: -1em;
+    margin-top: -2em;
 }
 
 .images .geology-planet-mercury {
@@ -40,7 +40,7 @@
         width: 8em;
         height: 8em;
         margin-left: 1.8em;
-        margin-top: -1.2em;
+        margin-top: -3em;
     }
 
     .underline-mercury {
@@ -64,12 +64,13 @@
     .geology-planet-mercury {
         width: 10em;
         height: 10em;
+        margin-top: -3.5em;
     }
 }
 
 @media all and (min-width: 75em) {
     .geology-planet-mercury {
-        margin-top: -7em;
+        margin-top: -11.3em;
     }
 }
 
@@ -80,7 +81,6 @@
     }
 
     .geology-planet-mercury {
-        margin-top: -3em;
         margin-left: 4em;
     } 
 }

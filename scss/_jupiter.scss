@@ -10,16 +10,16 @@
 }
 
 .jupiter-img-size {
-    width: 6.9em;
-    height: 6.9em;
+    width: 14em;
+    height: 14em;
 }
 
  .geology-planet-jupiter {
-    width: 4em;
-    height: 4em;
+    width: 11em;
+    height: 11em;
     grid-column: 3 / 3;
     margin-left: 1.5em;
-    margin-top: -1em;
+    margin-top: -5.3em;
 }
 
 .images .geology-planet-jupiter {
@@ -32,15 +32,15 @@
     }
 
     .jupiter-img-size {
-        width: 11.5em;
-        height: 11.5em;
+        width: 18em;
+        height: 18em;
     }
 
     .geology-planet-jupiter {
-        width: 8em;
-        height: 8em;
-        margin-left: 1.8em;
-        margin-top: -1.2em;
+        width: 14em;
+        height: 14em;
+        margin-left: 1.9em;
+        margin-top: -6.5em;
     }
 
     .underline-jupiter {
@@ -57,30 +57,31 @@
 
 @media all and (min-width: 50em) {
     .jupiter-img-size {
-        width: 13.5em;
-        height: 13.5em;
+        width: 20em;
+        height: 20em;
     }
 
     .geology-planet-jupiter {
-        width: 10em;
-        height: 10em;
+        width: 16em;
+        height: 16em;
+        margin-top: -7.2em;
     }
 }
 
 @media all and (min-width: 75em) {
     .geology-planet-jupiter {
-        margin-top: -7em;
+        margin-top: -7.5em;
     }
 }
 
 @media all and (min-width: 93.75em) { 
     .jupiter-img-size {
-        width: 18em;
-        height: 18em;
+        width: 24.5em;
+        height: 24.5em;
     }
 
     .geology-planet-jupiter {
-        margin-top: -3em;
+        margin-top: -8.7em;
         margin-left: 4em;
     } 
 }
