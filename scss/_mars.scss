@@ -1,78 +1,91 @@
 /* =================
-        Mars
+        #Mars
    ================= */
-   .mars {
+
+.mars {
     background-color: $color-mars;
 }
+
 
 .underline-mars {
     border-bottom-color: $color-mars;
 }
+
 
 .mars-img-size {
     width: 8em;
     height: 8em;
 }
 
- .geology-planet-mars {
-    width: 5em;
-    height: 5em;
-    grid-column: 3 / 3;
-    margin-left: 1.5em;
-    margin-top: -2.3em;
-}
+    .geology-planet-mars {
+        width: 5em;
+        height: 5em;
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -2.3em;
+    }
 
-.images .geology-planet-mars {
-    grid-row: 3 / 3;
-}
+    .images .geology-planet-mars {
+        grid-row: 3 / 3;
+    }
+
 
 @media all and (min-width: 43.75em) {
+
     .aboveline-mars:hover {
         border-top-color: $color-mars;
     }
+
 
     .mars-img-size {
         width: 12em;
         height: 12em;
     }
 
-    .geology-planet-mars {
-        width: 9em;
-        height: 9em;
-        margin-left: 1.6em;
-        margin-top: -3.2em;
-    }
+        .geology-planet-mars {
+            width: 9em;
+            height: 9em;
+            margin-left: 1.6em;
+            margin-top: -3.2em;
+        }
+
 
     .underline-mars {
         border-bottom-color: $color-bright-gray;
     }
 
-    .underline-mars:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-mars:focus {
-        background-color: $color-mars;
-    }
+        .underline-mars:hover {
+            background-color: $color-bright-gray;
+        }
+
+        .underline-mars:focus {
+            background-color: $color-mars;
+        }
 }
 
+
 @media all and (min-width: 50em) {
+
     .mars-img-size {
         width: 14em;
         height: 14em;
     }
 
-    .geology-planet-mars {
-        width: 11em;
-        height: 11em;
-        margin-top: -3.7em;
-    }
+        .geology-planet-mars {
+            width: 11em;
+            height: 11em;
+            margin-top: -3.7em;
+        }
 }
 
+
 @media all and (min-width: 75em) {
+
     .geology-planet-mars {
         margin-top: -12em;
     }
 }
+
 
 @media all and (min-width: 93.75em) { 
     .mars-img-size {
@@ -80,8 +93,8 @@
         height: 18.5em;
     }
 
-    .geology-planet-mars {
-        margin-top: -11.3em;
-        margin-left: 3.7em;
-    } 
+        .geology-planet-mars {
+            margin-top: -11.3em;
+            margin-left: 3.7em;
+        } 
 }

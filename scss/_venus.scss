@@ -1,87 +1,100 @@
 /* =================
-        Venus
+        #Venus
    ================= */
-   .venus {
+
+.venus {
     background-color: $color-venus;
 }
+
 
 .underline-venus {
     border-bottom-color: $color-venus;
 }
+
 
 .venus-img-size {
     width: 9.6em;
     height: 9.6em;
 }
 
- .geology-planet-venus {
-    width: 7em;
-    height: 7em;
-    grid-column: 3 / 3;
-    margin-left: 1.5em;
-    margin-top: -3em;
-}
+    .geology-planet-venus {
+        width: 7em;
+        height: 7em;
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -3em;
+    }
 
-.images .geology-planet-venus {
-    grid-row: 3 / 3;
-}
+    .images .geology-planet-venus {
+        grid-row: 3 / 3;
+    }
+
 
 @media all and (min-width: 43.75em) {
+
     .aboveline-venus:hover {
         border-top-color: $color-venus;
     }
+
 
     .venus-img-size {
         width: 14.5em;
         height: 14.5em;
     }
 
-    .geology-planet-venus {
-        width: 10em;
-        height: 10em;
-        margin-left: 2em;
-        margin-top: -4.3em;
-    }
+        .geology-planet-venus {
+            width: 10em;
+            height: 10em;
+            margin-left: 2em;
+            margin-top: -4.3em;
+        }
+
 
     .underline-venus {
         border-bottom-color: $color-bright-gray;
     }
 
-    .underline-venus:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-venus:focus {
-        background-color: $color-venus;
-    }
+        .underline-venus:hover {
+            background-color: $color-bright-gray;
+        }
+        .underline-venus:focus {
+            background-color: $color-venus;
+        }
 }
 
+
 @media all and (min-width: 50em) {
+
     .venus-img-size {
         width: 16.5em;
         height: 16.5em;
     }
 
-    .geology-planet-venus {
-        width: 12em;
-        height: 12em;
-        margin-top: -4.7em;
-    }
+        .geology-planet-venus {
+            width: 12em;
+            height: 12em;
+            margin-top: -4.7em;
+        }
 }
 
+
 @media all and (min-width: 75em) {
+
     .geology-planet-venus {
         margin-top: -10em;
     }
 }
 
+
 @media all and (min-width: 93.75em) { 
+
     .venus-img-size {
         width: 21em;
         height: 21em;
     }
 
-    .geology-planet-venus {
-        margin-top: -9.5em;
-        margin-left: 4em;
-    } 
+        .geology-planet-venus {
+            margin-top: -9.5em;
+            margin-left: 4em;
+        } 
 }

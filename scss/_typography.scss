@@ -1,6 +1,7 @@
 /* =================
-       Typography
+       #Typography
    ================= */
+
 .hero-text {
     margin-bottom: .5em;
     font-family: 'Antonio', sans-serif;
@@ -9,6 +10,7 @@
     color: $color-white;
 }
 
+
 a,
 a:active,
 a:focus {
@@ -16,19 +18,22 @@ a:focus {
     color: $color-white;
 }
 
+
 .mobile-planets-list-text {
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
     font-size: $font-size-s-l; 
 }
 
+
 .slider__content {
     display: none;
 }
 
-.slider__content--active {
-    display: unset;
-}
+    .slider__content--active {
+        display: unset;
+    }
+
 
 .planet-name {
     margin-top: 1em;
@@ -37,21 +42,22 @@ a:focus {
     font-size: $font-size-l;
 }
 
-.info-planet-text {
-    font-family: 'Spartan', sans-serif;
-    font-size: $font-size-s;
-    text-transform: capitalize;
-    line-height: 22px;
-}
+    .info-planet-text {
+        font-family: 'Spartan', sans-serif;
+        font-size: $font-size-s;
+        text-transform: capitalize;
+        line-height: 22px;
+    }
 
-.source-text {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-family: 'Spartan', sans-serif;
-    font-size: $font-size-s-md;
-    color: $color-bright-gray;
-    text-transform: capitalize;
-}
+    .source-text {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-family: 'Spartan', sans-serif;
+        font-size: $font-size-s-md;
+        color: $color-bright-gray;
+        text-transform: capitalize;
+    }
+
 
 .extra-info-text {
     font-family: 'Spartan', sans-serif;
@@ -59,103 +65,113 @@ a:focus {
     color: $color-bright-gray;
 }
 
-.extra-info-text-two {
-    font-family: 'Antonio', sans-serif;
-    font-size: $font-size-l-sm;
-}
+    .extra-info-text-two {
+        font-family: 'Antonio', sans-serif;
+        font-size: $font-size-l-sm;
+    }
+
 
 @media all and (min-width: 43.75em) {
-    h2  a,
-    h2  a:active,
-    h2  a:focus {
+
+    h2 a {
         color: $color-waterloo;
     }
 
-    h2  a:hover {
+        h2 a:hover {
             color: $color-white;
-    }
+        }
+
 
     .hero-text {
         grid-column: 2 / -2;
         justify-self: center;
     }
 
-    .header-nav-text {
-        font-family: 'Spartan', sans-serif;
-        font-size: $font-size-s;
-        padding-top: 1em;
-    }
+        .header-nav-text {
+            font-family: 'Spartan', sans-serif;
+            font-size: $font-size-s;
+            padding-top: 1em;
+        }
 
+        
     .planet-name, 
     .info-planet-text {
         text-align: left;
     }
 
-    .source-text {
-        text-align: left;
-    }
+        .source-text {
+            text-align: left;
+        }
+
 
     .extra-info-text {
         margin-bottom: .5em;
   }
 }
 
+
 @media all and (min-width: 50em) {
+
     .hero-text {
         font-size: $font-size-l;
     }
 
-    .header-nav-text {
-        font-size: $font-size-s-l;
-    }
+        .header-nav-text {
+            font-size: $font-size-s-l;
+        }
+
 
     .planet-name {
         font-size: $font-size-xl-sm;
     }
 
-    .info-planet-text {
-        font-size: $font-size-s-md;
-    }
+        .info-planet-text {
+            font-size: $font-size-s-md;
+        }
+
 
     .extra-info-text {
         font-size: $font-size-s;
     }
 
-    .extra-info-text-two {
-        font-size: $font-size-l-md;
-    }
+        .extra-info-text-two {
+            font-size: $font-size-l-md;
+        }
 }
 
 
 @media all and (min-width: 93.75em) {
+
     .hero-text {
         grid-column: 1 / -2;
         margin-left:  1.5em;
         font-size: $font-size-xl-sm;
     }
 
-    .header-nav-text {
-        font-size: $font-size-s-l;
-        margin-right: 2em;
-    }
+        .header-nav-text {
+            font-size: $font-size-s-l;
+            margin-right: 2em;
+        }
+
 
     .planet-name {
         font-size: $font-size-xl-md;
     }
 
-    .info-planet-text {
-        font-size: $font-size-s-l;
-    }
+        .info-planet-text {
+            font-size: $font-size-s-l;
+        }
 
-    .source-text {
-        font-size: $font-size-s-l;
-    }
+        .source-text {
+            font-size: $font-size-s-l;
+        }
+
 
     .extra-info-text {
         font-size: $font-size-s-md;
     }
 
-    .extra-info-text-two {
-        font-size: $font-size-l-md-two;
-    }
+        .extra-info-text-two {
+            font-size: $font-size-l-md-two;
+        }
 }

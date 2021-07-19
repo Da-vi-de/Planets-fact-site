@@ -1,86 +1,100 @@
 /* =================
-        Earth
+        #Earth
    ================= */
-   .earth {
+
+.earth {
     background-color: $color-earth;
 }
+
 
 .underline-earth {
     border-bottom-color: $color-earth;
 }
+
 
 .earth-img-size {
     width: 10.8em;
     height: 10.8em;
 }
 
- .geology-planet-earth {
-    width: 7.5em;
-    height: 7.5em;
-    grid-column: 3 / 3;
-    margin-left: 1.5em;
-    margin-top: -3.5em;
-}
+    .geology-planet-earth {
+        width: 7.5em;
+        height: 7.5em;
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -3.5em;
+    }
 
-.images .geology-planet-earth {
-    grid-row: 3 / 3;
-}
+    .images .geology-planet-earth {
+        grid-row: 3 / 3;
+    }
+
 
 @media all and (min-width: 43.75em) {
+
     .aboveline-earth:hover {
         border-top-color: $color-earth;
     }
+
 
     .earth-img-size {
         width: 14.5em;
         height: 14.5em;
     }
 
-    .geology-planet-earth {
-        width: 10.5em;
-        height: 10.5em;
-        margin-left: 1.8em;
-        margin-top: -5em;
-    }
+        .geology-planet-earth {
+            width: 10.5em;
+            height: 10.5em;
+            margin-left: 1.8em;
+            margin-top: -5em;
+        }
+
 
     .underline-earth {
         border-bottom-color: $color-bright-gray;
     }
 
-    .underline-earth:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-earth:focus {
-        background-color: $color-earth;
-    }
+        .underline-earth:hover {
+            background-color: $color-bright-gray;
+        }
+        
+        .underline-earth:focus {
+            background-color: $color-earth;
+        }
 }
 
+
 @media all and (min-width: 50em) {
+
     .earth-img-size {
         width: 16.5em;
         height: 16.5em;
     }
 
-    .geology-planet-earth {
-        width: 13em;
-        height: 13em;
-    }
+        .geology-planet-earth {
+            width: 13em;
+            height: 13em;
+        }
 }
 
+
 @media all and (min-width: 75em) {
+
     .geology-planet-earth {
         margin-top: -9.5em;
     }
 }
 
+
 @media all and (min-width: 93.75em) { 
+
     .earth-img-size {
         width: 21em;
         height: 21em;
     }
 
-    .geology-planet-earth {
-        margin-top: -10em;
-        margin-left: 4em;
-    } 
+        .geology-planet-earth {
+            margin-top: -10em;
+            margin-left: 4em;
+        } 
 }

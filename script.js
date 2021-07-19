@@ -22,6 +22,12 @@ toggle.addEventListener('click', function() {
     burgerIcon.classList.toggle('burger-icon');
 });
 
+function setLinksFocus() {
+    const link = get('focus__link');
+    link.focus();
+};
+
+
 // Tab component
 sliderContainer.addEventListener('click', function(e) {
     const clicked = e.target;

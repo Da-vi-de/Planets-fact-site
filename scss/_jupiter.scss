@@ -1,87 +1,101 @@
 /* =================
-        Jupiter
+        #Jupiter
    ================= */
-   .jupiter {
+
+.jupiter {
     background-color: $color-jupiter;
 }
+
 
 .underline-jupiter {
     border-bottom-color: $color-jupiter;
 }
+
 
 .jupiter-img-size {
     width: 14em;
     height: 14em;
 }
 
- .geology-planet-jupiter {
-    width: 11em;
-    height: 11em;
-    grid-column: 3 / 3;
-    margin-left: 1.5em;
-    margin-top: -5.3em;
-}
+    .geology-planet-jupiter {
+        width: 11em;
+        height: 11em;
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -5.3em;
+    }
 
-.images .geology-planet-jupiter {
-    grid-row: 3 / 3;
-}
+    .images .geology-planet-jupiter {
+        grid-row: 3 / 3;
+    }
+
 
 @media all and (min-width: 43.75em) {
+
     .aboveline-jupiter:hover {
         border-top-color: $color-jupiter;
     }
+
 
     .jupiter-img-size {
         width: 18em;
         height: 18em;
     }
 
-    .geology-planet-jupiter {
-        width: 14em;
-        height: 14em;
-        margin-left: 1.9em;
-        margin-top: -6.5em;
-    }
+        .geology-planet-jupiter {
+            width: 14em;
+            height: 14em;
+            margin-left: 1.9em;
+            margin-top: -6.5em;
+        }
+
 
     .underline-jupiter {
         border-bottom-color: $color-bright-gray;
     }
 
-    .underline-jupiter:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-jupiter:focus {
-        background-color: $color-jupiter;
-    }
+        .underline-jupiter:hover {
+            background-color: $color-bright-gray;
+        }
+
+        .underline-jupiter:focus {
+            background-color: $color-jupiter;
+        }
 }
 
+
 @media all and (min-width: 50em) {
+
     .jupiter-img-size {
         width: 20em;
         height: 20em;
     }
 
-    .geology-planet-jupiter {
-        width: 16em;
-        height: 16em;
-        margin-top: -7.2em;
-    }
+        .geology-planet-jupiter {
+            width: 16em;
+            height: 16em;
+            margin-top: -7.2em;
+        }
 }
 
+
 @media all and (min-width: 75em) {
+
     .geology-planet-jupiter {
         margin-top: -7.5em;
     }
 }
 
+
 @media all and (min-width: 93.75em) { 
+
     .jupiter-img-size {
         width: 24.5em;
         height: 24.5em;
     }
 
-    .geology-planet-jupiter {
-        margin-top: -8.7em;
-        margin-left: 4em;
-    } 
+        .geology-planet-jupiter {
+            margin-top: -8.7em;
+            margin-left: 4em;
+        } 
 }

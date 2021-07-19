@@ -1,86 +1,100 @@
 /* =================
-        Uranus
+        #Uranus
    ================= */
-   .uranus {
+
+.uranus {
     background-color: $color-uranus;
 }
+
 
 .underline-uranus {
     border-bottom-color: $color-uranus;
 }
+
 
 .uranus-img-size {
     width: 11em;
     height: 11em;
 }
 
- .geology-planet-uranus {
-    width: 8em;
-    height: 8em;
-    grid-column: 3 / 3;
-    margin-left: 1.5em;
-    margin-top: -4em;
-}
+    .geology-planet-uranus {
+        width: 8em;
+        height: 8em;
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -4em;
+    }
 
-.images .geology-planet-uranus {
-    grid-row: 3 / 3;
-}
+    .images .geology-planet-uranus {
+        grid-row: 3 / 3;
+    }
+
 
 @media all and (min-width: 43.75em) {
+
     .aboveline-uranus:hover {
         border-top-color: $color-uranus;
     }
+
 
     .uranus-img-size {
         width: 15em;
         height: 15em;
     }
 
-    .geology-planet-uranus {
-        width: 11em;
-        height: 11em;
-        margin-left: 1.8em;
-        margin-top: -5em;
-    }
+        .geology-planet-uranus {
+            width: 11em;
+            height: 11em;
+            margin-left: 1.8em;
+            margin-top: -5em;
+        }
+
 
     .underline-uranus {
         border-bottom-color: $color-bright-gray;
     }
 
-    .underline-uranus:hover {
-        background-color: $color-bright-gray;
-    }
-    .underline-uranus:focus {
-        background-color: $color-uranus;
-    }
+        .underline-uranus:hover {
+            background-color: $color-bright-gray;
+        }
+        
+        .underline-uranus:focus {
+            background-color: $color-uranus;
+        }
 }
 
+
 @media all and (min-width: 50em) {
+
     .uranus-img-size {
         width: 13em;
         height: 13em;
     }
 
-    .geology-planet-uranus {
-        width: 9.5em;
-        height: 9.5em;
-    }
+        .geology-planet-uranus {
+            width: 9.5em;
+            height: 9.5em;
+        }
 }
 
+
 @media all and (min-width: 75em) {
+
     .geology-planet-uranus {
         margin-top: -12.5em;
     }
 }
 
+
 @media all and (min-width: 93.75em) { 
+
     .uranus-img-size {
         width: 17.5em;
         height: 17.5em;
     }
 
-    .geology-planet-uranus {
-        margin-top: -13em;
-        margin-left: 4em;
-    } 
+        .geology-planet-uranus {
+            margin-top: -13em;
+            margin-left: 4em;
+        } 
 }

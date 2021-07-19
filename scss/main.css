@@ -1,8 +1,5 @@
 /* =================
-        Variables
-   ================= */
-/* =================
-         Layout
+         #Layout
    ================= */
 * {
   -webkit-box-sizing: border-box;
@@ -228,12 +225,12 @@ body {
     grid-area: 3 / 3;
     margin-top: 2em;
   }
-  .desktop-main-content-position {
-    margin: 2em 9em;
-  }
   .header-navigation {
     grid-column: 2 / -1;
     margin-right: 1.5em;
+  }
+  .desktop-main-content-position {
+    margin: 2em 9em;
   }
   .extra-info-container {
     padding-right: 9em;
@@ -241,7 +238,7 @@ body {
 }
 
 /* =================
-       Typography
+       #Typography
    ================= */
 .hero-text {
   margin-bottom: .5em;
@@ -307,9 +304,7 @@ a:focus {
 }
 
 @media all and (min-width: 43.75em) {
-  h2 a,
-  h2 a:active,
-  h2 a:focus {
+  h2 a {
     color: #838391;
   }
   h2 a:hover {
@@ -386,7 +381,7 @@ a:focus {
 }
 
 /* =================
-       Components
+       #Components
    ================= */
 .menu-toggle {
   background-color: transparent;
@@ -488,7 +483,7 @@ hr {
 }
 
 /* =================
-        Mercury
+        #Mercury
    ================= */
 .mercury {
   background-color: #419ebb;
@@ -571,7 +566,7 @@ hr {
 }
 
 /* =================
-        Venus
+        #Venus
    ================= */
 .venus {
   background-color: #eda249;
@@ -655,7 +650,7 @@ hr {
 }
 
 /* =================
-        Earth
+        #Earth
    ================= */
 .earth {
   background-color: #6F2ED6;
@@ -738,7 +733,7 @@ hr {
 }
 
 /* =================
-        Mars
+        #Mars
    ================= */
 .mars {
   background-color: #d14c32;
@@ -822,7 +817,7 @@ hr {
 }
 
 /* =================
-        Jupiter
+        #Jupiter
    ================= */
 .jupiter {
   background-color: #d83a34;
@@ -906,7 +901,7 @@ hr {
 }
 
 /* =================
-        Saturn
+        #Saturn
    ================= */
 .saturn {
   background-color: #cd5120;
@@ -990,7 +985,7 @@ hr {
 }
 
 /* =================
-        Uranus
+        #Uranus
    ================= */
 .uranus {
   background-color: #1ec2a4;
@@ -1073,7 +1068,7 @@ hr {
 }
 
 /* =================
-        Neptune
+        #Neptune
    ================= */
 .neptune {
   background-color: #2d68f0;
