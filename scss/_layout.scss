@@ -1,6 +1,22 @@
 /* =================
          #Layout
    ================= */
+
+/**
+* In the tab component (surface only) there's an ovelapped image, 
+* considering that the page must be responsive, it's not possible
+* using position relative and absolute, i used grid instead.
+*
+* 1) You'll find this class again (media query width: 43.75em) 
+*   with different grid settings. I selected the class here because
+*   i needed for overlapping reason.
+*   You'll also notice that in the media query the class comes
+*   right after the parent element in which all content resides,
+*   in that contest i had to make the condition so that i could
+*   move the content as required.
+*
+* 2) Please check also the planet components to know more about it.
+*/
    
 * {
     box-sizing: border-box;
@@ -44,7 +60,7 @@ body {
 
         .images {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(5, 1fr);  /* [1] [2] */
         }
 
         .planet-img {

@@ -2,6 +2,17 @@
         #Venus
    ================= */
 
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
+
 .venus {
     background-color: $color-venus;
 }
@@ -24,7 +35,7 @@
     }
 
     .images .geology-planet-venus {
-        grid-row: 3 / 3;
+        grid-row: 3 / 3;    /* [1]  */
     }
 
 
