@@ -15,17 +15,13 @@ const structure = get('#tab__2');
 const surface = get('#tab__3');
 const geologyImg = get('#geology');
 
+
 // Show/Hide Mobile navigation menu
 toggle.addEventListener('click', function() {
     nav.classList.toggle('hide');
     planet.classList.toggle('hide');
     burgerIcon.classList.toggle('burger-icon');
 });
-
-function setLinksFocus() {
-    const link = get('focus__link');
-    link.focus();
-};
 
 
 // Tab component
@@ -49,6 +45,7 @@ sliderContainer.addEventListener('click', function(e) {
 
 });
 
+
 // Set the geology image only in surface tab
 geologyImg.classList.add('hide');
 
@@ -67,6 +64,7 @@ buttons.addEventListener('click', function(e) {
     };
 }); 
 
+
 // Change Tab content for tablet and desktop screen
 function changeTabContent(e) {
     e.preventDefault();
@@ -84,7 +82,7 @@ function changeTabContent(e) {
         surface.innerHTML = "surface";
     };
 };
-// The onload is needed because we always want to see the right content in case
+// Onload is needed because we always want to see the right content in case
 // we want to or need to refresh the page.
 window.onload = changeTabContent;  
 window.onresize = changeTabContent;

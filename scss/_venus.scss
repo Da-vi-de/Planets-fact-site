@@ -13,13 +13,11 @@
 
 
 .venus-img-size {
-    width: 9.6em;
-    height: 9.6em;
+    @include planetWidthHeight(9.6em, 9.6em);
 }
 
     .geology-planet-venus {
-        width: 7em;
-        height: 7em;
+        @include planetWidthHeight(7em, 7em);
         grid-column: 3 / 3;
         margin-left: 1.5em;
         margin-top: -3em;
@@ -38,13 +36,11 @@
 
 
     .venus-img-size {
-        width: 14.5em;
-        height: 14.5em;
+        @include planetWidthHeight(14.5em, 14.5em);
     }
 
         .geology-planet-venus {
-            width: 10em;
-            height: 10em;
+            @include planetWidthHeight(10em, 10em);
             margin-left: 2em;
             margin-top: -4.3em;
         }
@@ -66,13 +62,11 @@
 @media all and (min-width: 50em) {
 
     .venus-img-size {
-        width: 16.5em;
-        height: 16.5em;
+        @include planetWidthHeight(16.5em, 16.5em);
     }
 
         .geology-planet-venus {
-            width: 12em;
-            height: 12em;
+            @include planetWidthHeight(12em, 12em);
             margin-top: -4.7em;
         }
 }
@@ -89,8 +83,7 @@
 @media all and (min-width: 93.75em) { 
 
     .venus-img-size {
-        width: 21em;
-        height: 21em;
+        @include planetWidthHeight(21em, 21em);
     }
 
         .geology-planet-venus {

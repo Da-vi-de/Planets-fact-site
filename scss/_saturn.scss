@@ -13,13 +13,11 @@
 
 
 .saturn-img-size {
-    width: 16em;
-    height: 16em;
+    @include planetWidthHeight(16em, 16em);
 }
 
     .geology-planet-saturn {
-        width: 8em;
-        height: 8em;
+        @include planetWidthHeight(8em, 8em);
         grid-column: 3 / 3;
         margin-left: 4em;
         margin-top: -6.7em;
@@ -38,13 +36,11 @@
 
 
     .saturn-img-size {
-        width: 20em;
-        height: 20em;
+        @include planetWidthHeight(20em, 20em);
     }
 
         .geology-planet-saturn {
-            width: 9em;
-            height: 9em;
+            @include planetWidthHeight(9em, 9em);
             margin-left: 5.5em;
             margin-top: -7.7em;
         }
@@ -67,13 +63,11 @@
 @media all and (min-width: 50em) {
 
     .saturn-img-size {
-        width: 22em;
-        height: 22em;
+        @include planetWidthHeight(22em, 22em);
     }
 
         .geology-planet-saturn {
-            width: 11em;
-            height: 11em;
+            @include planetWidthHeight(11em, 11em);
             margin-top: -8.5em;
         }
 }
@@ -90,8 +84,7 @@
 @media all and (min-width: 93.75em) { 
 
     .saturn-img-size {
-        width: 26.5em;
-        height: 26.5em;
+        @include planetWidthHeight(26.5em, 26.5em);
     }
 
         .geology-planet-saturn {

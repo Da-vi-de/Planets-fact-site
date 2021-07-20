@@ -13,13 +13,11 @@
 
 
 .mercury-img-size {
-    width: 6.9em;
-    height: 6.9em;
+    @include planetWidthHeight(6.9em, 6.9em);
 }
 
     .geology-planet-mercury {
-        width: 4em;
-        height: 4em;
+        @include planetWidthHeight(4em, 4em);
         grid-column: 3 / 3;
         margin-left: 1.5em;
         margin-top: -2em;
@@ -38,13 +36,11 @@
 
        
     .mercury-img-size {
-        width: 11.5em;
-        height: 11.5em;
+        @include planetWidthHeight(11.5em, 11.5em);
     }
 
         .geology-planet-mercury {
-            width: 8em;
-            height: 8em;
+            @include planetWidthHeight(8em, 8em);
             margin-left: 1.8em;
             margin-top: -3em;
         }
@@ -66,13 +62,11 @@
 @media all and (min-width: 50em) {
 
     .mercury-img-size {
-        width: 13.5em;
-        height: 13.5em;
+        @include planetWidthHeight(13.5em, 13.5em);
     }
 
         .geology-planet-mercury {
-            width: 10em;
-            height: 10em;
+            @include planetWidthHeight(10em, 10em);
             margin-top: -3.5em;
         }
 }
@@ -89,8 +83,7 @@
 @media all and (min-width: 93.75em) { 
 
     .mercury-img-size {
-        width: 18em;
-        height: 18em;
+        @include planetWidthHeight(18em, 18em);
     }
 
         .geology-planet-mercury {

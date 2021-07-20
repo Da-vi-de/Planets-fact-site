@@ -13,13 +13,11 @@
 
 
 .mars-img-size {
-    width: 8em;
-    height: 8em;
+    @include planetWidthHeight(8em, 8em);
 }
 
     .geology-planet-mars {
-        width: 5em;
-        height: 5em;
+        @include planetWidthHeight(5em, 5em);
         grid-column: 3 / 3;
         margin-left: 1.5em;
         margin-top: -2.3em;
@@ -38,13 +36,11 @@
 
 
     .mars-img-size {
-        width: 12em;
-        height: 12em;
+        @include planetWidthHeight(12em, 12em);
     }
 
         .geology-planet-mars {
-            width: 9em;
-            height: 9em;
+            @include planetWidthHeight(9em, 9em);
             margin-left: 1.6em;
             margin-top: -3.2em;
         }
@@ -67,13 +63,11 @@
 @media all and (min-width: 50em) {
 
     .mars-img-size {
-        width: 14em;
-        height: 14em;
+        @include planetWidthHeight(14em, 14em);
     }
 
         .geology-planet-mars {
-            width: 11em;
-            height: 11em;
+            @include planetWidthHeight(11em, 11em);
             margin-top: -3.7em;
         }
 }
@@ -89,8 +83,7 @@
 
 @media all and (min-width: 93.75em) { 
     .mars-img-size {
-        width: 18.5em;
-        height: 18.5em;
+        @include planetWidthHeight(18.5em, 18.5em);
     }
 
         .geology-planet-mars {

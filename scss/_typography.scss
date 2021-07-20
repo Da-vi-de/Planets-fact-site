@@ -4,8 +4,7 @@
 
 .hero-text {
     margin-bottom: .5em;
-    font-family: 'Antonio', sans-serif;
-    font-size: $font-size-l-md;
+    @include fontFamilySize('Antonio', $font-size-l-md);
     font-weight: 500;
     color: $color-white;
 }
@@ -20,9 +19,8 @@ a:focus {
 
 
 .mobile-planets-list-text {
-    font-family: 'Spartan', sans-serif;
+    @include fontFamilySize('Spartan', $font-size-s-l);
     font-weight: 700;
-    font-size: $font-size-s-l; 
 }
 
 
@@ -38,13 +36,11 @@ a:focus {
 .planet-name {
     margin-top: 1em;
     margin-bottom: .5em;
-    font-family: 'Antonio', sans-serif;
-    font-size: $font-size-l;
+    @include fontFamilySize('Antonio', $font-size-l);
 }
 
     .info-planet-text {
-        font-family: 'Spartan', sans-serif;
-        font-size: $font-size-s;
+        @include fontFamilySize('Spartan', $font-size-s);
         text-transform: capitalize;
         line-height: 22px;
     }
@@ -52,35 +48,23 @@ a:focus {
     .source-text {
         margin-top: 2em;
         margin-bottom: 2em;
-        font-family: 'Spartan', sans-serif;
-        font-size: $font-size-s-md;
+        @include fontFamilySize('Spartan', $font-size-s-md);
         color: $color-bright-gray;
         text-transform: capitalize;
     }
 
 
 .extra-info-text {
-    font-family: 'Spartan', sans-serif;
-    font-size: $font-size-xs;
+    @include fontFamilySize('Spartan', $font-size-xs);
     color: $color-bright-gray;
 }
 
     .extra-info-text-two {
-        font-family: 'Antonio', sans-serif;
-        font-size: $font-size-l-sm;
+        @include fontFamilySize('Antonio', $font-size-l-sm);
     }
 
 
 @media all and (min-width: 43.75em) {
-
-    h2 a {
-        color: $color-waterloo;
-    }
-
-        h2 a:hover {
-            color: $color-white;
-        }
-
 
     .hero-text {
         grid-column: 2 / -2;
@@ -88,8 +72,7 @@ a:focus {
     }
 
         .header-nav-text {
-            font-family: 'Spartan', sans-serif;
-            font-size: $font-size-s;
+            @include fontFamilySize('Spartan', $font-size-s);
             padding-top: 1em;
         }
 

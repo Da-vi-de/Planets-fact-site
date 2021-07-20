@@ -21,8 +21,7 @@ hr {
 }
 
     .extended-line {
-        margin-right: -1.8em;
-        margin-left: -1.8em;
+        @include marginLeftRight(-1.8em, -1.8em);
     }
 
 
@@ -40,10 +39,9 @@ hr {
     background: transparent;
     border: none;
     color: $color-bright-gray;
-    font-family: 'Spartan', sans-serif;
+    @include fontFamilySize('Spartan', $font-size-s);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: $font-size-s;
     padding: 1em 0;
     cursor: pointer;
 
@@ -81,8 +79,7 @@ hr {
 
         
     .extended-line {
-        margin-right: -2.2em;
-        margin-left: -2.2em;
+        @include marginLeftRight(-2.2em, -2.2em);
     }
 
 
@@ -111,9 +108,6 @@ hr {
 @media all and (min-width: 75em) {
     
     .extended-line {
-        margin-left: -9em;
-        margin-right: -9em;
+        @include marginLeftRight(-9em, -9em);
     }
 }
-
-

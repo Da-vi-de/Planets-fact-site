@@ -304,12 +304,6 @@ a:focus {
 }
 
 @media all and (min-width: 43.75em) {
-  h2 a {
-    color: #838391;
-  }
-  h2 a:hover {
-    color: #ffffff;
-  }
   .hero-text {
     grid-column: 2 / -2;
     -ms-grid-column-align: center;

@@ -13,13 +13,11 @@
 
 
 .neptune-img-size {
-    width: 11em;
-    height: 11em;
+    @include planetWidthHeight(11em, 11em);
 }
 
     .geology-planet-neptune {
-        width: 8em;
-        height: 8em;
+        @include planetWidthHeight(8em, 8em);
         grid-column: 3 / 3;
         margin-left: 1.5em;
         margin-top: -4em;
@@ -38,13 +36,11 @@
 
 
     .neptune-img-size {
-        width: 15em;
-        height: 15em;
+        @include planetWidthHeight(15em, 15em);
     }
 
         .geology-planet-neptune {
-            width: 11em;
-            height: 11em;
+            @include planetWidthHeight(11em, 11em);
             margin-left: 1.8em;
             margin-top: -5.3em;
         }
@@ -67,13 +63,11 @@
 @media all and (min-width: 50em) {
 
     .neptune-img-size {
-        width: 13em;
-        height: 13em;
+        @include planetWidthHeight(13em, 13em);
     }
 
         .geology-planet-neptune {
-            width: 9.5em;
-            height: 9.5em;
+            @include planetWidthHeight(9.5em, 9.5em);
             margin-top: -5em;
         }
 }
@@ -90,8 +84,7 @@
 @media all and (min-width: 93.75em) { 
 
     .neptune-img-size {
-        width: 17.5em;
-        height: 17.5em;
+        @include planetWidthHeight(17.5em, 17.5em);
     }
 
         .geology-planet-neptune {

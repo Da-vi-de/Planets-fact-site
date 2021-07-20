@@ -13,13 +13,11 @@
 
 
 .earth-img-size {
-    width: 10.8em;
-    height: 10.8em;
+    @include planetWidthHeight(10.8em, 10.8em);
 }
 
     .geology-planet-earth {
-        width: 7.5em;
-        height: 7.5em;
+        @include planetWidthHeight(7.5em, 7.5em);
         grid-column: 3 / 3;
         margin-left: 1.5em;
         margin-top: -3.5em;
@@ -38,13 +36,11 @@
 
 
     .earth-img-size {
-        width: 14.5em;
-        height: 14.5em;
+        @include planetWidthHeight(14.5em, 14.5em);
     }
 
         .geology-planet-earth {
-            width: 10.5em;
-            height: 10.5em;
+            @include planetWidthHeight(10.5em, 10.5em);
             margin-left: 1.8em;
             margin-top: -5em;
         }
@@ -67,13 +63,11 @@
 @media all and (min-width: 50em) {
 
     .earth-img-size {
-        width: 16.5em;
-        height: 16.5em;
+        @include planetWidthHeight(16.5em, 16.5em);
     }
 
         .geology-planet-earth {
-            width: 13em;
-            height: 13em;
+            @include planetWidthHeight(13em, 13em);
         }
 }
 
@@ -89,8 +83,7 @@
 @media all and (min-width: 93.75em) { 
 
     .earth-img-size {
-        width: 21em;
-        height: 21em;
+        @include planetWidthHeight(21em, 21em);
     }
 
         .geology-planet-earth {
