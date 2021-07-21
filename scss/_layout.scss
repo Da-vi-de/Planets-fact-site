@@ -1,0 +1,222 @@
+/* =================
+         #Layout
+   ================= */
+
+/**
+* In the tab component (surface only) there's an ovelapped image, 
+* considering that the page must be responsive, it's not possible
+* using position relative and absolute, i used grid instead.
+*
+* 1) You'll find this class again (media query width: 43.75em) 
+*   with different grid settings. I selected the class here because
+*   i needed for overlapping reason.
+*   You'll also notice that in the media query the class comes
+*   right after the parent element in which all content resides,
+*   in that contest i had to make the condition so that i could
+*   move the content as required.
+*
+* 2) Please check also the planet components to know more about it.
+*/
+   
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 1.8em 1.8em;
+    background-image: url(../assets/background-stars.svg);
+    background-repeat: no-repeat;
+    background-color: $color-black-pearl;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+    .hero {
+        @include flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+        .header-navigation {
+            display: none;
+        }
+
+
+    .mobile-list-position {
+        padding: 1.5em 0;
+    }
+
+        .chevron-icon {
+            float: right;
+        }
+
+
+    .planet-detail {
+        @include flex;
+    }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);  /* [1] [2] */
+        }
+
+        .planet-img {
+            grid-column: 3 / 3;
+            margin-top: 3em;
+        }
+
+
+    .extra-info-container {
+        border: 2px solid $color-bright-gray;
+        padding: 1em;
+        margin-bottom: .6em;
+    }
+
+        .extra-info-position {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .planet-info-position {
+            text-align: center;
+        }
+
+
+.slider__img {
+    display: none;
+}
+
+.slider__img--active {
+    display: unset;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: unset;
+}
+
+@media all and (min-width: 43.75em) {
+
+    .hero {
+        display: grid;
+    }
+
+        .header-navigation {
+            grid-column: 2 / -2;
+            display: unset;
+            margin-bottom: 1.8em;
+        }
+
+        .header-nav-position {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+    .tablet-desk-position {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
+        .images {
+            order: 1;
+            grid-area:  1 / 1 / 2 / -1;
+            margin-top: 2em;
+        }
+
+        .content-tablet-desk-position {
+            order: 2;
+            margin-right: 1.5em;
+        }
+
+        .planet-detail {
+            order: 3;
+            margin-top: 5em;
+            flex-direction: column;
+        }
+
+
+    .extra-info {
+        @include flex;
+        margin-top: 2em;
+    }
+
+        .extra-info-container {
+            padding-right: 3em;
+        }
+
+        .extra-info-position {
+            display: unset;
+            text-align: left;
+        } 
+}
+
+
+@media all and (min-width: 75em) {
+
+    body {
+        margin-left:  9em;
+        margin-right: 9em;
+    }
+
+        .images {
+            grid-area:  -2 / 1 / 1 / 1;
+            margin-top: 10em;
+            margin-right: 2em;
+        }
+
+
+        .extra-info-container {
+            padding-right: 5em;
+        }
+}
+
+@media all and (min-width: 93.75em) {
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+        .tablet-desk-position {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+            .images {
+                grid-area: -1 / 1 / 1 / 1;
+            }
+
+            .content-tablet-desk-position {
+                grid-area: 2 / 3;
+            }
+
+            .planet-detail {
+                grid-area: 3 / 3;
+                margin-top: 2em;
+            }
+
+            
+        .header-navigation {
+            grid-column: 2 / -1;
+            margin-right: 1.5em;
+        }
+
+
+        .desktop-main-content-position {
+            margin: 2em 9em;
+        }
+
+
+        .extra-info-container {
+            padding-right: 9em;
+        }  
+}

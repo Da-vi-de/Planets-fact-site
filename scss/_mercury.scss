@@ -1,0 +1,105 @@
+/* =================
+        #Mercury
+   ================= */
+
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
+
+
+.mercury {
+    background-color: $color-mercury;
+}
+
+
+.underline-mercury {
+    border-bottom-color: $color-mercury;
+}
+
+
+.mercury-img-size {
+    @include planetWidthHeight(6.9em, 6.9em);
+}
+
+    .geology-planet-mercury {
+        @include planetWidthHeight(4em, 4em);
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -2em;
+    }
+
+    .images .geology-planet-mercury {
+        
+        grid-row: 3 / 3; /* [1]  */
+    }
+
+
+@media all and (min-width: 43.75em) {
+
+    .aboveline-mercury:hover {
+        border-top-color: $color-mercury;
+    } 
+
+       
+    .mercury-img-size {
+        @include planetWidthHeight(11.5em, 11.5em);
+    }
+
+        .geology-planet-mercury {
+            @include planetWidthHeight(8em, 8em);
+            margin-left: 1.8em;
+            margin-top: -3em;
+        }
+
+
+    .underline-mercury {
+        border-bottom-color: $color-bright-gray;
+    }
+
+        .underline-mercury:hover {
+            background-color: $color-bright-gray;
+        }
+        .underline-mercury:focus {
+            background-color: $color-mercury;
+        }
+}
+
+
+@media all and (min-width: 50em) {
+
+    .mercury-img-size {
+        @include planetWidthHeight(13.5em, 13.5em);
+    }
+
+        .geology-planet-mercury {
+            @include planetWidthHeight(10em, 10em);
+            margin-top: -3.5em;
+        }
+}
+
+
+@media all and (min-width: 75em) {
+
+    .geology-planet-mercury {
+        margin-top: -11.3em;
+    }
+}
+
+
+@media all and (min-width: 93.75em) { 
+
+    .mercury-img-size {
+        @include planetWidthHeight(18em, 18em);
+    }
+
+        .geology-planet-mercury {
+            margin-left: 4em;
+        } 
+}

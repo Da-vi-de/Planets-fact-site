@@ -1,0 +1,105 @@
+/* =================
+        #Jupiter
+   ================= */
+
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
+
+.jupiter {
+    background-color: $color-jupiter;
+}
+
+
+.underline-jupiter {
+    border-bottom-color: $color-jupiter;
+}
+
+
+.jupiter-img-size {
+    @include planetWidthHeight(14em, 14em);
+}
+
+    .geology-planet-jupiter {
+        @include planetWidthHeight(11em, 11em);
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -5.3em;
+    }
+
+    .images .geology-planet-jupiter {
+        grid-row: 3 / 3;    /* [1]  */
+    }
+
+
+@media all and (min-width: 43.75em) {
+
+    .aboveline-jupiter:hover {
+        border-top-color: $color-jupiter;
+    }
+
+
+    .jupiter-img-size {
+        @include planetWidthHeight(18em, 18em);
+    }
+
+        .geology-planet-jupiter {
+            @include planetWidthHeight(14em, 14em);
+            margin-left: 1.9em;
+            margin-top: -6.5em;
+        }
+
+
+    .underline-jupiter {
+        border-bottom-color: $color-bright-gray;
+    }
+
+        .underline-jupiter:hover {
+            background-color: $color-bright-gray;
+        }
+
+        .underline-jupiter:focus {
+            background-color: $color-jupiter;
+        }
+}
+
+
+@media all and (min-width: 50em) {
+
+    .jupiter-img-size {
+        @include planetWidthHeight(20em, 20em);
+    }
+
+        .geology-planet-jupiter {
+            @include planetWidthHeight(16em, 16em);
+            margin-top: -7.2em;
+        }
+}
+
+
+@media all and (min-width: 75em) {
+
+    .geology-planet-jupiter {
+        margin-top: -7.5em;
+    }
+}
+
+
+@media all and (min-width: 93.75em) { 
+
+    .jupiter-img-size {
+        @include planetWidthHeight(24.5em, 24.5em);
+    }
+
+        .geology-planet-jupiter {
+            margin-top: -8.7em;
+            margin-left: 4em;
+        } 
+}

@@ -1,0 +1,20 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin fontFamilySize($font-family, $font-size) {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+@mixin marginLeftRight($margin-left, $margin-right) {
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+
+@mixin planetWidthHeight($width, $height) {
+    width: $width;
+    height: $height;
+}

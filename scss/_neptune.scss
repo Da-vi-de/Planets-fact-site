@@ -1,0 +1,105 @@
+/* =================
+        #Neptune
+   ================= */
+
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
+
+.neptune {
+    background-color: $color-neptune;
+}
+
+
+.underline-neptune {
+    border-bottom-color: $color-neptune;
+}
+
+
+.neptune-img-size {
+    @include planetWidthHeight(11em, 11em);
+}
+
+    .geology-planet-neptune {
+        @include planetWidthHeight(8em, 8em);
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -4em;
+    }
+
+    .images .geology-planet-neptune {
+        grid-row: 3 / 3;    /* [1]  */
+    }
+
+
+@media all and (min-width: 43.75em) {
+
+    .aboveline-neptune:hover {
+        border-top-color: $color-neptune;
+    }
+
+
+    .neptune-img-size {
+        @include planetWidthHeight(15em, 15em);
+    }
+
+        .geology-planet-neptune {
+            @include planetWidthHeight(11em, 11em);
+            margin-left: 1.8em;
+            margin-top: -5.3em;
+        }
+
+
+    .underline-neptune {
+        border-bottom-color: $color-bright-gray;
+    }
+
+        .underline-neptune:hover {
+            background-color: $color-bright-gray;
+        }
+
+        .underline-neptune:focus {
+            background-color: $color-neptune;
+        }
+}
+
+
+@media all and (min-width: 50em) {
+
+    .neptune-img-size {
+        @include planetWidthHeight(13em, 13em);
+    }
+
+        .geology-planet-neptune {
+            @include planetWidthHeight(9.5em, 9.5em);
+            margin-top: -5em;
+        }
+}
+
+
+@media all and (min-width: 75em) {
+
+    .geology-planet-neptune {
+        margin-top: -13em;
+    }
+}
+
+
+@media all and (min-width: 93.75em) { 
+
+    .neptune-img-size {
+        @include planetWidthHeight(17.5em, 17.5em);
+    }
+
+        .geology-planet-neptune {
+            margin-top: -12.5em;
+            margin-left: 4em;
+        } 
+}

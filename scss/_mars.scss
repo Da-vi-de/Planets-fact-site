@@ -1,0 +1,104 @@
+/* =================
+        #Mars
+   ================= */
+
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
+
+.mars {
+    background-color: $color-mars;
+}
+
+
+.underline-mars {
+    border-bottom-color: $color-mars;
+}
+
+
+.mars-img-size {
+    @include planetWidthHeight(8em, 8em);
+}
+
+    .geology-planet-mars {
+        @include planetWidthHeight(5em, 5em);
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -2.3em;
+    }
+
+    .images .geology-planet-mars {
+        grid-row: 3 / 3;    /* [1]  */
+    }
+
+
+@media all and (min-width: 43.75em) {
+
+    .aboveline-mars:hover {
+        border-top-color: $color-mars;
+    }
+
+
+    .mars-img-size {
+        @include planetWidthHeight(12em, 12em);
+    }
+
+        .geology-planet-mars {
+            @include planetWidthHeight(9em, 9em);
+            margin-left: 1.6em;
+            margin-top: -3.2em;
+        }
+
+
+    .underline-mars {
+        border-bottom-color: $color-bright-gray;
+    }
+
+        .underline-mars:hover {
+            background-color: $color-bright-gray;
+        }
+
+        .underline-mars:focus {
+            background-color: $color-mars;
+        }
+}
+
+
+@media all and (min-width: 50em) {
+
+    .mars-img-size {
+        @include planetWidthHeight(14em, 14em);
+    }
+
+        .geology-planet-mars {
+            @include planetWidthHeight(11em, 11em);
+            margin-top: -3.7em;
+        }
+}
+
+
+@media all and (min-width: 75em) {
+
+    .geology-planet-mars {
+        margin-top: -12em;
+    }
+}
+
+
+@media all and (min-width: 93.75em) { 
+    .mars-img-size {
+        @include planetWidthHeight(18.5em, 18.5em);
+    }
+
+        .geology-planet-mars {
+            margin-top: -11.3em;
+            margin-left: 3.7em;
+        } 
+}

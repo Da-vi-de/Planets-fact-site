@@ -1,0 +1,104 @@
+/* =================
+        #Venus
+   ================= */
+
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
+
+.venus {
+    background-color: $color-venus;
+}
+
+
+.underline-venus {
+    border-bottom-color: $color-venus;
+}
+
+
+.venus-img-size {
+    @include planetWidthHeight(9.6em, 9.6em);
+}
+
+    .geology-planet-venus {
+        @include planetWidthHeight(7em, 7em);
+        grid-column: 3 / 3;
+        margin-left: 1.5em;
+        margin-top: -3em;
+    }
+
+    .images .geology-planet-venus {
+        grid-row: 3 / 3;    /* [1]  */
+    }
+
+
+@media all and (min-width: 43.75em) {
+
+    .aboveline-venus:hover {
+        border-top-color: $color-venus;
+    }
+
+
+    .venus-img-size {
+        @include planetWidthHeight(14.5em, 14.5em);
+    }
+
+        .geology-planet-venus {
+            @include planetWidthHeight(10em, 10em);
+            margin-left: 2em;
+            margin-top: -4.3em;
+        }
+
+
+    .underline-venus {
+        border-bottom-color: $color-bright-gray;
+    }
+
+        .underline-venus:hover {
+            background-color: $color-bright-gray;
+        }
+        .underline-venus:focus {
+            background-color: $color-venus;
+        }
+}
+
+
+@media all and (min-width: 50em) {
+
+    .venus-img-size {
+        @include planetWidthHeight(16.5em, 16.5em);
+    }
+
+        .geology-planet-venus {
+            @include planetWidthHeight(12em, 12em);
+            margin-top: -4.7em;
+        }
+}
+
+
+@media all and (min-width: 75em) {
+
+    .geology-planet-venus {
+        margin-top: -10em;
+    }
+}
+
+
+@media all and (min-width: 93.75em) { 
+
+    .venus-img-size {
+        @include planetWidthHeight(21em, 21em);
+    }
+
+        .geology-planet-venus {
+            margin-top: -9.5em;
+            margin-left: 4em;
+        } 
+}
