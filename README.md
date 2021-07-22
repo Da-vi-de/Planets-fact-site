@@ -85,7 +85,7 @@ but there's room for improvements.
 Thanks to [Kevin Powell](https://www.youtube.com/watch?v=HFG3BKOqOlE) lesson on how to overlap content with grid.
 
 
-###Acknowledgement
+### Acknowledgement
 
 Thanks to [@emestabillo](https://www.frontendmentor.io/profile/emestabillo) for solving a problem i dealt with for hours.
 The svg burger icon changes color when clicked. She suggested to set the opacity at 25% and it works, finally the color
