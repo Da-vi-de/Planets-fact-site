@@ -1,6 +1,21 @@
 /* =================
          #Layout
    ================= */
+/**
+* In the tab component (surface only) there's an ovelapped image, 
+* considering that the page must be responsive, it's not possible
+* using position relative and absolute, i used grid instead.
+*
+* 1) You'll find this class again (media query width: 43.75em) 
+*   with different grid settings. I selected the class here because
+*   i needed for overlapping reason.
+*   You'll also notice that in the media query the class comes
+*   right after the parent element in which all content resides,
+*   in that contest i had to make the condition so that i could
+*   move the content as required.
+*
+* 2) Please check also the planet components to know more about it.
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,14 +41,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .header-navigation {
@@ -66,6 +81,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+  /* [1] [2] */
 }
 
 .planet-img {
@@ -242,7 +258,7 @@ body {
    ================= */
 .hero-text {
   margin-bottom: .5em;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio";
   font-size: 1.75rem;
   font-weight: 500;
   color: #ffffff;
@@ -256,9 +272,9 @@ a:focus {
 }
 
 .mobile-planets-list-text {
-  font-family: 'Spartan', sans-serif;
-  font-weight: 700;
+  font-family: "Spartan";
   font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .slider__content {
@@ -272,12 +288,12 @@ a:focus {
 .planet-name {
   margin-top: 1em;
   margin-bottom: .5em;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio";
   font-size: 2.5rem;
 }
 
 .info-planet-text {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan";
   font-size: 0.6875rem;
   text-transform: capitalize;
   line-height: 22px;
@@ -286,20 +302,20 @@ a:focus {
 .source-text {
   margin-top: 2em;
   margin-bottom: 2em;
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan";
   font-size: 0.75rem;
   color: #38384f;
   text-transform: capitalize;
 }
 
 .extra-info-text {
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan";
   font-size: 0.5625rem;
   color: #38384f;
 }
 
 .extra-info-text-two {
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio";
   font-size: 1.25rem;
 }
 
@@ -310,7 +326,7 @@ a:focus {
         justify-self: center;
   }
   .header-nav-text {
-    font-family: 'Spartan', sans-serif;
+    font-family: "Spartan";
     font-size: 0.6875rem;
     padding-top: 1em;
   }
@@ -384,8 +400,7 @@ a:focus {
 }
 
 .burger-icon {
-  -webkit-filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
-          filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
+  opacity: 25%;
 }
 
 hr {
@@ -396,8 +411,8 @@ hr {
 }
 
 .extended-line {
-  margin-right: -1.8em;
   margin-left: -1.8em;
+  margin-right: -1.8em;
 }
 
 .circle {
@@ -414,10 +429,10 @@ hr {
   background: transparent;
   border: none;
   color: #38384f;
-  font-family: 'Spartan', sans-serif;
+  font-family: "Spartan";
+  font-size: 0.6875rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.6875rem;
   padding: 1em 0;
   cursor: pointer;
 }
@@ -449,8 +464,8 @@ hr {
     border-top-width: 100%;
   }
   .extended-line {
-    margin-right: -2.2em;
     margin-left: -2.2em;
+    margin-right: -2.2em;
   }
   div hr {
     display: none;
@@ -479,6 +494,16 @@ hr {
 /* =================
         #Mercury
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .mercury {
   background-color: #419ebb;
 }
@@ -504,6 +529,7 @@ hr {
 .images .geology-planet-mercury {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -562,6 +588,16 @@ hr {
 /* =================
         #Venus
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .venus {
   background-color: #eda249;
 }
@@ -587,6 +623,7 @@ hr {
 .images .geology-planet-venus {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -646,6 +683,16 @@ hr {
 /* =================
         #Earth
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .earth {
   background-color: #6F2ED6;
 }
@@ -671,6 +718,7 @@ hr {
 .images .geology-planet-earth {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -729,6 +777,16 @@ hr {
 /* =================
         #Mars
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .mars {
   background-color: #d14c32;
 }
@@ -754,6 +812,7 @@ hr {
 .images .geology-planet-mars {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -813,6 +872,16 @@ hr {
 /* =================
         #Jupiter
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .jupiter {
   background-color: #d83a34;
 }
@@ -838,6 +907,7 @@ hr {
 .images .geology-planet-jupiter {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -897,6 +967,16 @@ hr {
 /* =================
         #Saturn
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .saturn {
   background-color: #cd5120;
 }
@@ -922,6 +1002,7 @@ hr {
 .images .geology-planet-saturn {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -981,6 +1062,16 @@ hr {
 /* =================
         #Uranus
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .uranus {
   background-color: #1ec2a4;
 }
@@ -1006,6 +1097,7 @@ hr {
 .images .geology-planet-uranus {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
@@ -1064,6 +1156,16 @@ hr {
 /* =================
         #Neptune
    ================= */
+/**
+* The responsive overlapping image it was the hardest task to accomplish
+* in this project.
+*
+* 1) This is the trick that makes the overlapping work.
+*    The parent element needs to be selected along with the
+*    image we want to overlap. Even though the code is split
+*    i had to put it here. Each planet (component) has its own
+*    overlapped image.   
+*/
 .neptune {
   background-color: #2d68f0;
 }
@@ -1089,6 +1191,7 @@ hr {
 .images .geology-planet-neptune {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
+  /* [1]  */
 }
 
 @media all and (min-width: 43.75em) {
