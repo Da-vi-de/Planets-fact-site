@@ -48,16 +48,7 @@ Users should be able to:
 ### What I learned
 
 Working at this project it seemed easy at first glance but i dealt with things worth to mention.
-The mobile menu burger is a svg icon, i wanted to change the color when it's clicked, i was surprised i couldn't do it easily.
-After researching for a solution i found out a css property, unfortunately the result is not the best though.
-
-```css
- .burger-icon {
-        filter: invert(14%) sepia(6%) saturate(7%) hue-rotate(31deg) brightness(94%) contrast(81%);
-    }
-```
-
-Right after i had to take care of the circles, i thought i could set some padding, border radius, width and height but it was hard
+The circles, i thought i could set some padding, border radius, width and height but it was hard
 to make a perfect little round shape so i learned shape-outside and clip-path properties that did a perfect job,
 i was quite satisfied with the result.
 
