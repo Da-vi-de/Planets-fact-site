@@ -13,7 +13,9 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+  -[Acknowledgement](#acknowledgement)
 - [Author](#author)
+
 
 
 ## Overview
@@ -81,6 +83,13 @@ but there's room for improvements.
 ### Useful resources
 
 Thanks to [Kevin Powell](https://www.youtube.com/watch?v=HFG3BKOqOlE) lesson on how to overlap content with grid.
+
+
+### Acknowledgement
+
+Thanks to [@emestabillo](https://www.frontendmentor.io/profile/emestabillo) for solving a problem i dealt with for hours.
+The svg burger icon changes color when clicked. She suggested to set the opacity at 25% and it works, finally the color
+matches the design.
 
 
 ## Author
