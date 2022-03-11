@@ -267,8 +267,14 @@ body {
 a,
 a:active,
 a:focus {
+  outline: none;
   text-decoration: none;
   color: #ffffff;
+}
+
+a:focus-visible {
+  padding: .5rem;
+  border: 3px dotted #838391;
 }
 
 .mobile-planets-list-text {
