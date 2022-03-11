@@ -45,8 +45,7 @@
 
     .aboveline-mercury:hover {
         border-top-color: $color-mercury;
-    } 
-
+    }
        
     .mercury-img-size {
         @include planetWidthHeight(11.5em, 11.5em);
